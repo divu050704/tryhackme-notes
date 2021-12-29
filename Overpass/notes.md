@@ -9,7 +9,7 @@
 5. We are in.
 6. Page shows private RSA Key which is  a SSH Key.
 7. We will copy the complete key and save it as `id_rsa`.
-8. Then we will convert in into hash by `/usr/share/john/ssh2john.py id_rsa > id_rsa.hash`.
+8. Then we will convert in into hash by ```/usr/share/john/ssh2john.py id_rsa > id_rsa.hash```.
 9. Then we will crack the hash by `john --wordlist=/usr/share/wordlist/rockyou.txt id_rsa.hash`.
 10. Found the password *james13*.
 11. Used the key to login by `chmod 600 id_rsa && ssh -i id_rsa john@10.10.161.104`.
