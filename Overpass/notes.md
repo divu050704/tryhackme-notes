@@ -14,7 +14,7 @@
 /usr/share/john/ssh2john.py id_rsa > id_rsa.hash
 ```
 9. Then we will crack the hash by 
-```bash
+```console
 john --wordlist=/usr/share/wordlist/rockyou.txt id_rsa.hash
 ```
 10. Found the password *james13*.
