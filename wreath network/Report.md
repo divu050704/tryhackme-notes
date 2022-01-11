@@ -1,4 +1,4 @@
-#Overview
+# Overview
 1. There are three machines on the network
 2. There is at least one public facing webserver
 3. There is a self-hosted git server somewhere on the network
@@ -7,7 +7,7 @@
 6. By the sounds of it this is likely to be the server variant of Windows, which might work in our favour
 7. The (assumed) Windows PC cannot be accessed directly from the webserver
 
-#Enumeration
-###Nmap scan
-![nmap scan](/wreath network/Screenshots/nmap.png)
+# Enumeration
+### Nmap scan
+ ![nmap scan](https://github.com/divu050704/tryhackme-notes/blob/main/wreath%20network/Screenshots/nmap.png)
 
