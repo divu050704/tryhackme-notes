@@ -13,4 +13,5 @@
 On using nmap on the machine we found 4 ports open on the machine. ssh on port 22, http on port 80, zeus-admin on port 9090, and Webmin Server in port 10000.We can see the machine is running on Cent OS.
 ### Website
 On pasting the ip adress(10.200.187.200) in browser the page tries to redirect us to a virtual domain (https://thomaswreath.thm/). After changing aur hosts file we found some personal data of Mr. Thomas Wreath on the webapage which could be possibly used for a phishing attack. Some of the data is given below:-
+![websitedata](https://github.com/divu050704/tryhackme-notes/blob/main/wreath%20network/Screenshots/Website.png)
 
