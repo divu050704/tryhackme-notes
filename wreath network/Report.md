@@ -15,3 +15,7 @@ On using nmap on the machine we found 4 ports open on the machine. ssh on port 2
 On pasting the ip adress(10.200.187.200) in browser the page tries to redirect us to a virtual domain (https://thomaswreath.thm/). After changing aur hosts file we found some personal data of Mr. Thomas Wreath on the webapage which could be possibly used for a phishing attack. Some of the data is given below:-
 ![websitedata](https://github.com/divu050704/tryhackme-notes/blob/main/wreath%20network/Screenshots/Website.png)
 
+#Exploitation
+1. On searching for exploits for webmin1.920 we found for vulnerability CVE-2019-15107  on exploit-db. Cloned repostiorry `MuirlandOracle/CVE-2019-15107` from github.
+2. Changed directory and istalled required files via `pip3 install -r requirements.txt`. Gave permission to file CVE-2019-15107.py to run and ran the file.
+
