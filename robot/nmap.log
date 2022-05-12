@@ -1,0 +1,11 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-10 20:33 IST
+Nmap scan report for 10.10.214.175
+Host is up (0.18s latency).
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE  SERVICE VERSION
+22/tcp  closed ssh
+80/tcp  closed http
+443/tcp closed https
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.44 seconds
