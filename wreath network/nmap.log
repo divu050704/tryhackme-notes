@@ -1,0 +1,32 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-18 17:32 IST
+Nmap scan report for 10.200.90.200
+Host is up (0.17s latency).
+Not shown: 14806 filtered tcp ports (no-response), 189 filtered tcp ports (admin-prohibited)
+PORT      STATE  SERVICE    VERSION
+22/tcp    open   ssh        OpenSSH 8.0 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 9c:1b:d4:b4:05:4d:88:99:ce:09:1f:c1:15:6a:d4:7e (RSA)
+|   256 93:55:b4:d9:8b:70:ae:8e:95:0d:c2:b6:d2:03:89:a4 (ECDSA)
+|_  256 f0:61:5a:55:34:9b:b7:b8:3a:46:ca:7d:9f:dc:fa:12 (ED25519)
+80/tcp    open   http       Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1c)
+|_http-title: Did not follow redirect to https://thomaswreath.thm
+|_http-server-header: Apache/2.4.37 (centos) OpenSSL/1.1.1c
+443/tcp   open   ssl/http   Apache httpd 2.4.37 ((centos) OpenSSL/1.1.1c)
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Thomas Wreath | Developer
+| ssl-cert: Subject: commonName=thomaswreath.thm/organizationName=Thomas Wreath Development/stateOrProvinceName=East Riding Yorkshire/countryName=GB
+| Not valid before: 2022-08-18T11:43:31
+|_Not valid after:  2023-08-18T11:43:31
+| tls-alpn: 
+|_  http/1.1
+|_http-server-header: Apache/2.4.37 (centos) OpenSSL/1.1.1c
+|_ssl-date: TLS randomness does not represent time
+9090/tcp  closed zeus-admin
+10000/tcp open   http       MiniServ 1.890 (Webmin httpd)
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+Aggressive OS guesses: HP P2000 G3 NAS device (91%), Linux 2.6.32 (90%), Infomir MAG-250 set-top box (90%), Ubiquiti AirMax NanoStation WAP (Linux 2.6.32) (90%), Linux 3.7 (90%), Netgear RAIDiator 4.2.21 (Linux 2.6.37) (90%), Linux 2.6.32 - 3.13 (89%), Linux 3.0 - 3.2 (89%), Linux 3.3 (89%), Linux 2.6.32 - 3.1 (89%)
+No exact OS matches for host (test conditions non-ideal).
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 236.44 seconds
