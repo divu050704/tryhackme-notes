@@ -1,0 +1,28 @@
+Try "help" to get a list of possible commands.
+[?2004hsmb: \> l
+[?2004l  .                                   D        0  Tue Feb  2 14:50:09 2021
+  ..                                  D        0  Tue Feb  2 14:58:11 2021
+  temp                                D        0  Sat Feb  6 17:15:10 2021
+  data                                D        0  Tue Feb  2 14:57:33 2021
+
+		11309648 blocks of size 1024. 3279296 blocks available
+[?2004hsmb: \> cd temp
+[?2004l[?2004hsmb: \temp\> ls
+[?2004l  .                                   D        0  Sat Feb  6 17:15:10 2021
+  ..                                  D        0  Tue Feb  2 14:50:09 2021
+  services.txt                        N       38  Sat Feb  6 17:15:09 2021
+
+		11309648 blocks of size 1024. 3279296 blocks available
+[?2004hsmb: \temp\> get servc[Kices.txt
+[?2004l[?2004hsmb: \temp\> cd ..//[Kdata
+[?2004l[?2004hsmb: \data\> ls
+[?2004l  .                                   D        0  Tue Feb  2 14:57:33 2021
+  ..                                  D        0  Tue Feb  2 14:50:09 2021
+  data.txt                            N       48  Tue Feb  2 14:51:18 2021
+  business-req.txt                    N      190  Tue Feb  2 14:57:33 2021
+
+		11309648 blocks of size 1024. 3279296 blocks available
+[?2004hsmb: \data\> get data.txt busimess[K[K[K[Kn[K[K[K[K[K
+[?2004l[?2004hsmb: \data\> get business-req.txt s[K
+[?2004l[?2004hsmb: \data\> exit
+[?2004l
