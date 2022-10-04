@@ -1,0 +1,17 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://team.thm/scripts
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,js,txt
+[+] Timeout:                 10s
+===============================================================
+2022/10/11 10:13:36 Starting gobuster in directory enumeration mode
+===============================================================
+/script.txt           (Status: 200) [Size: 597]
+
