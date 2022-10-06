@@ -1,0 +1,38 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.73.204/mail
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              xml,php,js,html,css
+[+] Timeout:                 10s
+===============================================================
+2022/06/25 18:21:55 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.css             (Status: 403) [Size: 277]
+/.hta.xml             (Status: 403) [Size: 277]
+/.hta                 (Status: 403) [Size: 277]
+/.hta.php             (Status: 403) [Size: 277]
+/.hta.js              (Status: 403) [Size: 277]
+/.htaccess.css        (Status: 403) [Size: 277]
+/.hta.html            (Status: 403) [Size: 277]
+/.htpasswd.js         (Status: 403) [Size: 277]
+/.htaccess.xml        (Status: 403) [Size: 277]
+/.htpasswd.html       (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htpasswd            (Status: 403) [Size: 277]
+/.htaccess.php        (Status: 403) [Size: 277]
+/.htpasswd.css        (Status: 403) [Size: 277]
+/.htaccess.js         (Status: 403) [Size: 277]
+/.htpasswd.xml        (Status: 403) [Size: 277]
+/.htaccess.html       (Status: 403) [Size: 277]
+/.htpasswd.php        (Status: 403) [Size: 277]
+/index.php            (Status: 200) [Size: 2386]
+/index.php            (Status: 200) [Size: 2386]
+===============================================================
+2022/06/25 18:28:54 Finished
+===============================================================
