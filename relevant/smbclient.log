@@ -1,0 +1,10 @@
+Try "help" to get a list of possible commands.
+[?2004hsmb: \> dir
+[?2004l  .                                   D        0  Sun Jul 26 03:16:04 2020
+  ..                                  D        0  Sun Jul 26 03:16:04 2020
+  passwords.txt                       A       98  Sat Jul 25 20:45:33 2020
+
+		7735807 blocks of size 4096. 4950954 blocks available
+[?2004hsmb: \> getpass[K[K[K[K passwords.txt
+[?2004l[?2004hsmb: \> exit
+[?2004l
