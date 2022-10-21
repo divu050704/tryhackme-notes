@@ -1,0 +1,92 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-10-29 15:11 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 15:11
+Completed NSE at 15:11, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 15:11
+Completed NSE at 15:11, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 15:11
+Completed NSE at 15:11, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 15:11
+Completed Parallel DNS resolution of 1 host. at 15:11, 0.00s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 15:11
+Scanning 10.10.210.187 [1000 ports]
+Discovered open port 3389/tcp on 10.10.210.187
+Completed Connect Scan at 15:12, 13.81s elapsed (1000 total ports)
+Initiating Service scan at 15:12
+Scanning 1 service on 10.10.210.187
+Completed Service scan at 15:12, 6.99s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.210.187.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 15:12
+Completed NSE at 15:12, 0.85s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 15:12
+Completed NSE at 15:12, 0.60s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 15:12
+Completed NSE at 15:12, 0.00s elapsed
+Nmap scan report for 10.10.210.187
+Host is up, received user-set (0.15s latency).
+Scanned at 2022-10-29 15:11:58 IST for 22s
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON  VERSION
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2022-10-29T09:42:22+00:00; +2s from scanner time.
+| ssl-cert: Subject: commonName=WIN-EOM4PK0578N
+| Issuer: commonName=WIN-EOM4PK0578N
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-10-28T09:41:22
+| Not valid after:  2023-04-29T09:41:22
+| MD5:   8158 c18d b620 e39c 8378 3a8d 0bdd fff8
+| SHA-1: 5504 deaa bc83 877a 3e9d 2a79 0350 9d45 4161 1909
+| -----BEGIN CERTIFICATE-----
+| MIIC4jCCAcqgAwIBAgIQFic3qq49Y5tL5ciBu+edDjANBgkqhkiG9w0BAQsFADAa
+| MRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wHhcNMjIxMDI4MDk0MTIyWhcNMjMw
+| NDI5MDk0MTIyWjAaMRgwFgYDVQQDEw9XSU4tRU9NNFBLMDU3OE4wggEiMA0GCSqG
+| SIb3DQEBAQUAA4IBDwAwggEKAoIBAQDTl50eB89yPUwEw2aFTeZIQ3lM0A5BxCHX
+| huQ0S9uMRVXpZbTqrvk6MXkbUuudKDplsbqrYQRXuj92eiQ+Tditebkiz/AnHHvl
+| CqWFwkUxiUcq1Yi4Hg428ABpO1UcDnGt7NTk2iO+wpfCVcTb4r424CfVNe2X8H+G
+| 5tJ7Fq/8P9b8z1LARnS4Q07GuorPdUK+HfcCE012TZ+8JvYeQoQo114WfGLvd6o8
+| 3GzRY8k8tmEBozbjPBYTFrkP66Ytk0GOluTP6JbvxN0HG95CTH7Cv9QpWVgRxrLd
+| yfPJDg59r1Xi89XPkZ0Mk6DOOa5rWBsg0n0aHbdrB0XayKyVD9yBAgMBAAGjJDAi
+| MBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQsF
+| AAOCAQEADqzpr+1AEWeL2X/w4SrlNzOowHjz3FptKgXWZRbdAX1Yri8Jrz+Rae1X
+| jDwHVv0WOJPyxxTaQPxla5E9pBYT5G3jtqXA64+QMqtQAZT81Hqqe8AgRlYne5cV
+| 2NH1iHLJIVnvaZcSv4TABJlw75INpIQik/8qjclO5JYesFqYBJwwEF9XEA5Oxapw
+| xOceMczhXkym/oVhoRK4hk/i9/uHMDNnMYw9nZtyrFxIy58BxyO5jcsKume5hxIa
+| ZUTFS7x5AfOu4GhuunXQS+rKUHvc6oNVHZfPTx2fPdo6qjQePgtgtVIp+S/6MtqO
+| BWOR6cpFIR5GtzR41u1/zFVcp+qULA==
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: WIN-EOM4PK0578N
+|   NetBIOS_Domain_Name: WIN-EOM4PK0578N
+|   NetBIOS_Computer_Name: WIN-EOM4PK0578N
+|   DNS_Domain_Name: WIN-EOM4PK0578N
+|   DNS_Computer_Name: WIN-EOM4PK0578N
+|   Product_Version: 10.0.17763
+|_  System_Time: 2022-10-29T09:42:22+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1s, deviation: 0s, median: 1s
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 15:12
+Completed NSE at 15:12, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 15:12
+Completed NSE at 15:12, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 15:12
+Completed NSE at 15:12, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.07 seconds
