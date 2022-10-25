@@ -1,0 +1,97 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-11-03 09:37 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 09:37
+Completed NSE at 09:37, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 09:37
+Completed NSE at 09:37, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 09:37
+Completed NSE at 09:37, 0.00s elapsed
+Initiating Ping Scan at 09:37
+Scanning 10.10.173.15 [2 ports]
+Completed Ping Scan at 09:37, 0.15s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 09:37
+Completed Parallel DNS resolution of 1 host. at 09:37, 0.01s elapsed
+DNS resolution of 1 IPs took 0.01s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 09:37
+Scanning 10.10.173.15 [65535 ports]
+Discovered open port 21/tcp on 10.10.173.15
+Discovered open port 80/tcp on 10.10.173.15
+Connect Scan Timing: About 30.79% done; ETC: 09:39 (0:01:10 remaining)
+Connect Scan Timing: About 61.36% done; ETC: 09:39 (0:00:38 remaining)
+Discovered open port 10000/tcp on 10.10.173.15
+Discovered open port 55007/tcp on 10.10.173.15
+Completed Connect Scan at 09:39, 101.08s elapsed (65535 total ports)
+Initiating Service scan at 09:39
+Scanning 4 services on 10.10.173.15
+Completed Service scan at 09:39, 6.35s elapsed (4 services on 1 host)
+NSE: Script scanning 10.10.173.15.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 09:39
+NSE: [ftp-bounce 10.10.173.15:21] PORT response: 500 Illegal PORT command.
+NSE Timing: About 99.82% done; ETC: 09:40 (0:00:00 remaining)
+Completed NSE at 09:40, 31.73s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 09:40
+Completed NSE at 09:40, 1.18s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 09:40
+Completed NSE at 09:40, 0.01s elapsed
+Nmap scan report for 10.10.173.15
+Host is up, received conn-refused (0.15s latency).
+Scanned at 2022-11-03 09:37:42 IST for 141s
+Not shown: 65531 closed tcp ports (conn-refused)
+PORT      STATE SERVICE REASON  VERSION
+21/tcp    open  ftp     syn-ack vsftpd 3.0.3
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.17.0.215
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+80/tcp    open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+10000/tcp open  http    syn-ack MiniServ 1.930 (Webmin httpd)
+|_http-title: Site doesn't have a title (text/html; Charset=iso-8859-1).
+|_http-favicon: Unknown favicon MD5: 5CD8135B5239935906B84DF610C6E67A
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+55007/tcp open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e3:ab:e1:39:2d:95:eb:13:55:16:d6:ce:8d:f9:11:e5 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8bsvFyC4EXgZIlLR/7o9EHosUTTGJKIdjtMUyYrhUpJiEdUahT64rItJMCyO47iZTR5wkQx2H8HThHT6iQ5GlMzLGWFSTL1ttIulcg7uyXzWhJMiG/0W4HNIR44DlO8zBvysLRkBSCUEdD95kLABPKxIgCnYqfS3D73NJI6T2qWrbCTaIG5QAS5yAyPERXXz3ofHRRiCr3fYHpVopUbMTWZZDjR3DKv7IDsOCbMKSwmmgdfxDhFIBRtCkdiUdGJwP/g0uEUtHbSYsNZbc1s1a5EpaxvlESKPBainlPlRkqXdIiYuLvzsf2J0ajniPUkvJ2JbC8qm7AaDItepXLoDt
+|   256 ae:de:f2:bb:b7:8a:00:70:20:74:56:76:25:c0:df:38 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLIDkrDNUoTTfKoucY3J3eXFICcitdce9/EOdMn8/7ZrUkM23RMsmFncOVJTkLOxOB+LwOEavTWG/pqxKLpk7oc=
+|   256 25:25:83:f2:a7:75:8a:a0:46:b2:12:70:04:68:5c:cb (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPsAMyp7Cf1qf50P6K9P2n30r4MVz09NnjX7LvcKgG2p
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 09:40
+Completed NSE at 09:40, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 09:40
+Completed NSE at 09:40, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 09:40
+Completed NSE at 09:40, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 141.21 seconds
