@@ -1,0 +1,18 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://ip-10-10-173-15.eu-west-1.compute.internal/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              txt,php,js,xml
+[+] Timeout:                 10s
+===============================================================
+2022/11/03 10:03:12 Starting gobuster in directory enumeration mode
+===============================================================
+/manual               (Status: 301) [Size: 373] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/manual/]
+/robots.txt           (Status: 200) [Size: 257]                                                                
+/joomla               (Status: 301) [Size: 373] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/]
