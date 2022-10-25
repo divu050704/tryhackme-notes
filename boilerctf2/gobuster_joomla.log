@@ -1,0 +1,27 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/11/03 10:56:21 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 333]
+/.hta                 (Status: 403) [Size: 328]
+/.htpasswd            (Status: 403) [Size: 333]
+/_archive             (Status: 301) [Size: 382] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/_archive/]
+/_database            (Status: 301) [Size: 383] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/_database/]
+/_files               (Status: 301) [Size: 380] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/_files/]   
+/_test                (Status: 301) [Size: 379] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/_test/]    
+/~www                 (Status: 301) [Size: 378] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/~www/]     
+/administrator        (Status: 301) [Size: 387] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/administrator/]
+/bin                  (Status: 301) [Size: 377] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/bin/]          
+/build                (Status: 301) [Size: 379] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/build/]        
+/cache                (Status: 301) [Size: 379] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/cache/]        
+/components           (Status: 301) [Size: 384] [--> http://ip-10-10-173-15.eu-west-1.compute.internal/joomla/components/]   
