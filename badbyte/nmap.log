@@ -1,0 +1,28 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-10-24 15:03 IST
+Initiating Ping Scan at 15:03
+Scanning 10.10.177.65 [2 ports]
+Completed Ping Scan at 15:03, 0.16s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 15:03
+Completed Parallel DNS resolution of 1 host. at 15:03, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 15:03
+Scanning 10.10.177.65 [65535 ports]
+Discovered open port 22/tcp on 10.10.177.65
+Increasing send delay for 10.10.177.65 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.177.65 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 10.10.177.65 from 10 to 20 due to max_successful_tryno increase to 6
+Increasing send delay for 10.10.177.65 from 20 to 40 due to max_successful_tryno increase to 7
+Connect Scan Timing: About 29.42% done; ETC: 15:04 (0:01:14 remaining)
+Connect Scan Timing: About 59.95% done; ETC: 15:04 (0:00:41 remaining)
+Discovered open port 30024/tcp on 10.10.177.65
+Completed Connect Scan at 15:04, 100.54s elapsed (65535 total ports)
+Nmap scan report for 10.10.177.65
+Host is up, received conn-refused (0.16s latency).
+Scanned at 2022-10-24 15:03:09 IST for 101s
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT      STATE SERVICE REASON
+22/tcp    open  ssh     syn-ack
+30024/tcp open  unknown syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 100.79 seconds
