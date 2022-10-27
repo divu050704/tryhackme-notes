@@ -1,0 +1,4 @@
+Loaded 1 password hash (SSH, SSH private key [RSA/DSA/EC/OPENSSH 32/64])
+Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 1 for all loaded hashes
+Cost 2 (iteration count) is 2 for all loaded hashes
+cupcake          (id_rsa)     
