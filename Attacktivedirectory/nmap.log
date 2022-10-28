@@ -1,0 +1,47 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-10-31 10:10 IST
+Nmap scan report for 10.10.180.210
+Host is up (0.15s latency).
+Not shown: 987 closed tcp ports (conn-refused)
+PORT     STATE SERVICE       VERSION
+53/tcp   open  domain        Simple DNS Plus
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-title: IIS Windows Server
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2022-10-31 04:40:56Z)
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+445/tcp  open  microsoft-ds?
+464/tcp  open  kpasswd5?
+593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+636/tcp  open  tcpwrapped
+3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+3269/tcp open  tcpwrapped
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2022-10-31T04:41:13+00:00; +3s from scanner time.
+| ssl-cert: Subject: commonName=AttacktiveDirectory.spookysec.local
+| Not valid before: 2022-10-30T04:34:51
+|_Not valid after:  2023-05-01T04:34:51
+| rdp-ntlm-info: 
+|   Target_Name: THM-AD
+|   NetBIOS_Domain_Name: THM-AD
+|   NetBIOS_Computer_Name: ATTACKTIVEDIREC
+|   DNS_Domain_Name: spookysec.local
+|   DNS_Computer_Name: AttacktiveDirectory.spookysec.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2022-10-31T04:41:05+00:00
+Service Info: Host: ATTACKTIVEDIREC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2s, deviation: 0s, median: 2s
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2022-10-31T04:41:09
+|_  start_date: N/A
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 36.98 seconds
