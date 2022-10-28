@@ -1,0 +1,26 @@
+
+    __             __               __     
+   / /_____  _____/ /_  _______  __/ /____ 
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/ _ \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
+
+Version: v1.0.3 (9dad6e1) - 10/31/22 - Ronnie Flathers @ropnop
+
+2022/10/31 10:23:16 >  Using KDC(s):[0m
+2022/10/31 10:23:16 >  	spookysec.local:88
+[0m
+[32m2022/10/31 10:23:17 >  [+] VALID USERNAME:	 james@spookysec.local[0m
+[32m2022/10/31 10:23:20 >  [+] VALID USERNAME:	 svc-admin@spookysec.local[0m
+[32m2022/10/31 10:23:23 >  [+] VALID USERNAME:	 James@spookysec.local[0m
+[32m2022/10/31 10:23:24 >  [+] VALID USERNAME:	 robin@spookysec.local[0m
+[32m2022/10/31 10:23:38 >  [+] VALID USERNAME:	 darkstar@spookysec.local[0m
+[32m2022/10/31 10:23:46 >  [+] VALID USERNAME:	 administrator@spookysec.local[0m
+[32m2022/10/31 10:24:03 >  [+] VALID USERNAME:	 backup@spookysec.local[0m
+[32m2022/10/31 10:24:11 >  [+] VALID USERNAME:	 paradox@spookysec.local[0m
+[32m2022/10/31 10:25:01 >  [+] VALID USERNAME:	 JAMES@spookysec.local[0m
+[32m2022/10/31 10:25:17 >  [+] VALID USERNAME:	 Robin@spookysec.local[0m
+[32m2022/10/31 10:26:56 >  [+] VALID USERNAME:	 Administrator@spookysec.local[0m
+[32m2022/10/31 10:30:17 >  [+] VALID USERNAME:	 Darkstar@spookysec.local[0m
+[32m2022/10/31 10:31:20 >  [+] VALID USERNAME:	 Paradox@spookysec.local[0m
+[32m2022/10/31 10:35:01 >  [+] VALID USERNAME:	 DARKSTAR@spookysec.local[0m
