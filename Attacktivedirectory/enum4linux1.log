@@ -1,0 +1,176 @@
+Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Mon Oct 31 10:54:57 2022
+
+[34m =========================================( [0m[32mTarget Information[0m[34m )=========================================
+
+[0mTarget ........... spookysec.local
+RID Range ........ 500-550,1000-1050
+Username ......... 'backup'
+Password ......... 'backup2517860'
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+[34m ==========================( [0m[32mEnumerating Workgroup/Domain on spookysec.local[0m[34m )==========================
+
+[0m[33m
+[E] [0m[31mCan't find workgroup/domain
+
+[0m
+
+[34m ==============================( [0m[32mNbtstat Information for spookysec.local[0m[34m )==============================
+
+[0mLooking up status of 10.10.180.210
+No reply from 10.10.180.210
+
+[34m ==================================( [0m[32mSession Check on spookysec.local[0m[34m )==================================
+
+[0m[33m
+[+] [0m[32mServer spookysec.local allows sessions using username 'backup', password 'backup2517860'
+
+[0m
+[34m ===============================( [0m[32mGetting domain SID for spookysec.local[0m[34m )===============================
+
+[0mDomain Name: THM-AD
+Domain Sid: S-1-5-21-3591857110-2884097990-301047963
+[33m
+[+] [0m[32mHost is part of a domain (not a workgroup)
+
+[0m
+[34m =================================( [0m[32mOS information on spookysec.local[0m[34m )=================================
+
+[0m[33m
+[E] [0m[31mCan't get OS info with smbclient
+
+[0m[33m
+[+] [0m[32mGot OS info for spookysec.local from srvinfo: 
+[0m	SPOOKYSEC.LOCALWk Sv PDC Tim NT     
+	platform_id     :	500
+	os version      :	10.0
+	server type     :	0x80102b
+
+
+[34m ======================================( [0m[32mUsers on spookysec.local[0m[34m )======================================
+
+[0mindex: 0xfc1 RID: 0x641 acb: 0x00000210 Account: a-spooks	Name: Admin Spooks	Desc: (null)
+index: 0xeda RID: 0x1f4 acb: 0x00000210 Account: Administrator	Name: (null)	Desc: Built-in account for administering the computer/domain
+index: 0xfc0 RID: 0x45e acb: 0x00000210 Account: backup	Name: backup	Desc: (null)
+index: 0xfae RID: 0x450 acb: 0x00000210 Account: breakerofthings	Name: Ashu BreakerOfThings	Desc: (null)
+index: 0xfb2 RID: 0x454 acb: 0x00000210 Account: darkstar	Name: Jon Darkstar	Desc: (null)
+index: 0xedb RID: 0x1f5 acb: 0x00000215 Account: Guest	Name: (null)	Desc: Built-in account for guest access to the computer/domain
+index: 0xfb7 RID: 0x459 acb: 0x00000210 Account: horshark	Name: horshark	Desc: (null)
+index: 0xfaf RID: 0x451 acb: 0x00000210 Account: james	Name: James Ninja	Desc: (null)
+index: 0xf0f RID: 0x1f6 acb: 0x00020011 Account: krbtgt	Name: (null)	Desc: Key Distribution Center Service Account
+index: 0xfb6 RID: 0x458 acb: 0x00000210 Account: Muirland	Name: Muirland Oracle	Desc: (null)
+index: 0xfb0 RID: 0x452 acb: 0x00000210 Account: optional	Name: root optional	Desc: (null)
+index: 0xfb3 RID: 0x455 acb: 0x00000210 Account: Ori	Name: Ori	Desc: (null)
+index: 0xfb5 RID: 0x457 acb: 0x00000210 Account: paradox	Name: Par Adox	Desc: (null)
+index: 0xfb4 RID: 0x456 acb: 0x00000210 Account: robin	Name: Robin	Desc: (null)
+index: 0xfb1 RID: 0x453 acb: 0x00000210 Account: sherlocksec	Name: Dan SherlockSec	Desc: (null)
+index: 0xfad RID: 0x44f acb: 0x00000210 Account: skidy	Name: Ben Skidy	Desc: (null)
+index: 0xfb8 RID: 0x45a acb: 0x00010210 Account: svc-admin	Name: svc admin	Desc: (null)
+
+user:[Administrator] rid:[0x1f4]
+user:[Guest] rid:[0x1f5]
+user:[krbtgt] rid:[0x1f6]
+user:[skidy] rid:[0x44f]
+user:[breakerofthings] rid:[0x450]
+user:[james] rid:[0x451]
+user:[optional] rid:[0x452]
+user:[sherlocksec] rid:[0x453]
+user:[darkstar] rid:[0x454]
+user:[Ori] rid:[0x455]
+user:[robin] rid:[0x456]
+user:[paradox] rid:[0x457]
+user:[Muirland] rid:[0x458]
+user:[horshark] rid:[0x459]
+user:[svc-admin] rid:[0x45a]
+user:[backup] rid:[0x45e]
+user:[a-spooks] rid:[0x641]
+
+[34m ================================( [0m[32mShare Enumeration on spookysec.local[0m[34m )================================
+
+[0mdo_connect: Connection to spookysec.local failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	backup          Disk      
+	C$              Disk      Default share
+	IPC$            IPC       Remote IPC
+	NETLOGON        Disk      Logon server share 
+	SYSVOL          Disk      Logon server share 
+Reconnecting with SMB1 for workgroup listing.
+Unable to connect with SMB1 -- no workgroup available
+[33m
+[+] [0m[32mAttempting to map shares on spookysec.local
+
+[0m//spookysec.local/ADMIN$	[35mMapping: [0mDENIED[35m Listing: [0mN/A[35m Writing: [0mN/A
+//spookysec.local/backup	[35mMapping: [0mOK[35m Listing: [0mDENIED[35m Writing: [0mN/A
+//spookysec.local/C$	[35mMapping: [0mDENIED[35m Listing: [0mN/A[35m Writing: [0mN/A
+[33m
+[E] [0m[31mCan't understand response:
+
+[0mNT_STATUS_NO_SUCH_FILE listing \*
+//spookysec.local/IPC$	[35mMapping: [0mN/A[35m Listing: [0mN/A[35m Writing: [0mN/A
+[33m
+[E] [0m[31mCan't understand response:
+
+[0mdo_connect: Connection to AttacktiveDirectory.spookysec.local failed (Error NT_STATUS_UNSUCCESSFUL)
+//spookysec.local/NETLOGON	[35mMapping: [0mN/A[35m Listing: [0mN/A[35m Writing: [0mN/A
+[33m
+[E] [0m[31mCan't understand response:
+
+[0mdo_connect: Connection to AttacktiveDirectory.spookysec.local failed (Error NT_STATUS_UNSUCCESSFUL)
+//spookysec.local/SYSVOL	[35mMapping: [0mN/A[35m Listing: [0mN/A[35m Writing: [0mN/A
+
+[34m ==========================( [0m[32mPassword Policy Information for spookysec.local[0m[34m )==========================
+
+[0m
+
+[+] Attaching to spookysec.local using backup:backup2517860
+
+[+] Trying protocol 139/SMB...
+
+	[!] Protocol failed: Cannot request session (Called Name:SPOOKYSEC.LOCAL)
+
+[+] Trying protocol 445/SMB...
+
+[+] Found domain(s):
+
+	[+] THM-AD
+	[+] Builtin
+
+[+] Password Info for Domain: THM-AD
+
+	[+] Minimum password length: None
+	[+] Password history length: None
+	[+] Maximum password age: 41 days 23 hours 53 minutes 
+	[+] Password Complexity Flags: 000000
+
+		[+] Domain Refuse Password Change: 0
+		[+] Domain Password Store Cleartext: 0
+		[+] Domain Password Lockout Admins: 0
+		[+] Domain Password No Clear Change: 0
+		[+] Domain Password No Anon Change: 0
+		[+] Domain Password Complex: 0
+
+	[+] Minimum password age: 1 day 4 minutes 
+	[+] Reset Account Lockout Counter: 30 minutes 
+	[+] Locked Account Duration: 30 minutes 
+	[+] Account Lockout Threshold: None
+	[+] Forced Log off Time: Not Set
+
+
+[33m
+[+] [0m[32mRetieved partial password policy with rpcclient:
+
+
+[0mPassword Complexity: Disabled
+Minimum Password Length: 0
+
+
+[34m =====================================( [0m[32mGroups on spookysec.local[0m[34m )=====================================
+
+[0m[33m
+[+] [0m[32mGetting builtin groups:
+
+[0m
