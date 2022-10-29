@@ -1,0 +1,128 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-11-03 18:01 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:01
+Completed NSE at 18:01, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:01
+Completed NSE at 18:01, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:01
+Completed NSE at 18:01, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 18:01
+Completed Parallel DNS resolution of 1 host. at 18:01, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 18:01
+Scanning 10.10.93.183 [1000 ports]
+Discovered open port 3389/tcp on 10.10.93.183
+Discovered open port 8080/tcp on 10.10.93.183
+Completed Connect Scan at 18:01, 10.93s elapsed (1000 total ports)
+Initiating Service scan at 18:01
+Scanning 2 services on 10.10.93.183
+Completed Service scan at 18:03, 107.47s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.93.183.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:03
+Completed NSE at 18:03, 5.65s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:03
+Completed NSE at 18:03, 1.30s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+Nmap scan report for 10.10.93.183
+Host is up, received user-set (0.15s latency).
+Scanned at 2022-11-03 18:01:02 IST for 125s
+Not shown: 998 filtered tcp ports (no-response)
+PORT     STATE SERVICE       REASON  VERSION
+3389/tcp open  ms-wbt-server syn-ack Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: GAIA
+|   NetBIOS_Domain_Name: GAIA
+|   NetBIOS_Computer_Name: GAIA
+|   DNS_Domain_Name: GAIA
+|   DNS_Computer_Name: GAIA
+|   Product_Version: 10.0.17763
+|_  System_Time: 2022-11-03T12:33:04+00:00
+|_ssl-date: 2022-11-03T12:33:09+00:00; +2s from scanner time.
+| ssl-cert: Subject: commonName=GAIA
+| Issuer: commonName=GAIA
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-11-02T12:06:26
+| Not valid after:  2023-05-04T12:06:26
+| MD5:   cba9 9024 61e0 d6cd 699e e590 2191 642f
+| SHA-1: 8b2e 9d73 bf20 f568 68ea 9782 98bb fc82 53fb 1ca7
+| -----BEGIN CERTIFICATE-----
+| MIICzDCCAbSgAwIBAgIQYPY8Z/U9PZxK5QbMQ32tkDANBgkqhkiG9w0BAQsFADAP
+| MQ0wCwYDVQQDEwRHQUlBMB4XDTIyMTEwMjEyMDYyNloXDTIzMDUwNDEyMDYyNlow
+| DzENMAsGA1UEAxMER0FJQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+| AMS43JrI6mtkHsoXicIiwO1kMrMIxpQFh10kkdPHVCnBq2lF64g+r5M6FFKpL2tw
+| EtxDUlNpl8JlIJ2DeSBMvVOPaHdpJWGRbmE4GJfgxK0oYGxDD5vBQ91V8hVF2O6h
+| AW8yMpC9ys7nYus/K2kcEnZG0ujN+X5ISfW2aD4P3MXhBnaS/Bm/IOrb+c4Pl37r
+| bRdRHF7/C0fIaDJ9HtnLYGFMJ2CyMGguIbHJ4vUATaQh0EOhudxY46NTvTV7hY09
+| Q22IbT1C52Mk298UOspUsOAUj6Mv6nShkoKVx9GTzYgXQK4iPt9wxEVs3nezwEb/
+| GLk5lp1liA38xAzk2X+tyXECAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEw
+| CwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBCwUAA4IBAQAANdWDsvJ9ux5ztBZ+V2gA
+| HvdKW6j2ZxzgnUsVitAhqHSwVB16/Vg8ddofKZNbce6xDIAkyueytdmEF87fl6wr
+| 52YHCmXiZraazBqLXj2Rgeup2umOx5taaXI9ZisxuGep01TG5S4Gny2PUly15a+h
+| HuDkEBNclTgwwZp94xJpisU0wLagkvgPE1OpQGH5kkrmbuU3esqCjHkOYjfRU4PB
+| RXqA4YS7FnwTo4Nm6xbz8AyV6NdEOHo/S3R86yf619mbtz20il79bQ/ZG0X24vty
+| JsuBnkD6eGXhvnNKL/Uwrsdicsweiz3wbHvhQRjgV5E9jMlR6rtfVdF+5VqfG2WC
+|_-----END CERTIFICATE-----
+8080/tcp open  http-proxy    syn-ack
+|_http-title: 401 Access Denied
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Content-Type: text/html
+|     Content-Length: 177
+|     Connection: Keep-Alive
+|     <HTML><HEAD><TITLE>404 Not Found</TITLE></HEAD><BODY><H1>404 Not Found</H1>The requested URL nice%20ports%2C/Tri%6Eity.txt%2ebak was not found on this server.<P></BODY></HTML>
+|   GetRequest: 
+|     HTTP/1.1 401 Access Denied
+|     Content-Type: text/html
+|     Content-Length: 144
+|     Connection: Keep-Alive
+|     WWW-Authenticate: Digest realm="ThinVNC", qop="auth", nonce="RTmDspDo5UBI1zkCkOjlQA==", opaque="UT3306eWE8bNs3agpNE0lCZufkxiairPJr"
+|_    <HTML><HEAD><TITLE>401 Access Denied</TITLE></HEAD><BODY><H1>401 Access Denied</H1>The requested URL requires authorization.<P></BODY></HTML>
+| http-auth: 
+| HTTP/1.1 401 Access Denied\x0D
+|_  Digest realm=ThinVNC nonce=iCtTvJDo5UCI5TkCkOjlQA== qop=auth opaque=7mAYg52FA0TKKYiHOPK4nLllE0pds515PE
+| http-methods: 
+|_  Supported Methods: GET POST
+|_http-favicon: Unknown favicon MD5: CEE00174E844FDFEB7F56192E6EC9F5D
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8080-TCP:V=7.92%I=7%D=11/3%Time=6363B49C%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,179,"HTTP/1\.1\x20401\x20Access\x20Denied\r\nContent-Type:\x20
+SF:text/html\r\nContent-Length:\x20144\r\nConnection:\x20Keep-Alive\r\nWWW
+SF:-Authenticate:\x20Digest\x20realm=\"ThinVNC\",\x20qop=\"auth\",\x20nonc
+SF:e=\"RTmDspDo5UBI1zkCkOjlQA==\",\x20opaque=\"UT3306eWE8bNs3agpNE0lCZufkx
+SF:iairPJr\"\r\n\r\n<HTML><HEAD><TITLE>401\x20Access\x20Denied</TITLE></HE
+SF:AD><BODY><H1>401\x20Access\x20Denied</H1>The\x20requested\x20URL\x20\x2
+SF:0requires\x20authorization\.<P></BODY></HTML>\r\n")%r(FourOhFourRequest
+SF:,111,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20text/html\r\
+SF:nContent-Length:\x20177\r\nConnection:\x20Keep-Alive\r\n\r\n<HTML><HEAD
+SF:><TITLE>404\x20Not\x20Found</TITLE></HEAD><BODY><H1>404\x20Not\x20Found
+SF:</H1>The\x20requested\x20URL\x20nice%20ports%2C/Tri%6Eity\.txt%2ebak\x2
+SF:0was\x20not\x20found\x20on\x20this\x20server\.<P></BODY></HTML>\r\n");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2s, deviation: 0s, median: 1s
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 126.09 seconds
