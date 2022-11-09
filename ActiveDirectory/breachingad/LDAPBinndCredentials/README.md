@@ -49,13 +49,13 @@ Reading package lists... Done
 ❯ sudo dpkg-reconfigure -p low slapd
 ```
 
-![screenshot for LDAP configuration](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/97afd26fd4f6d10a2a86ab65ac401845.png) <br />
-![screenshot for LDAP configuration](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/01b0d4256900cbf48d8d082d8bdf14bb.png) <br />
-![screenshot for LDAP configuration](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/c4bef0c3f054c32ca982ee9c1608ba1b.png) <br />
-![screenshot for LDAP configuration](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/23b957d41ddba8060e4bc2295b56a2fb.png) <br />
-![screenshot for LDAP configuration](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/07af572567aa32e0e0be2b4d9f54b89a.png) <br />
-[!screenshot for LDAP configuration](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/4d5086da7b25a6f218d6eebdab6d3b71.png) <br />
-![screenshot for LDAP configuration](https://tryhackme-images.s3.amazonaws.com/user-uploads/6093e17fa004d20049b6933e/room-content/d383582606e776eb901650ac9799cef5.png) <br />
+![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/97afd26fd4f6d10a2a86ab65ac401845.png) <br />
+![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/01b0d4256900cbf48d8d082d8bdf14bb.png) <br />
+![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/c4bef0c3f054c32ca982ee9c1608ba1b.png) <br />
+![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/23b957d41ddba8060e4bc2295b56a2fb.png) <br />
+![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/07af572567aa32e0e0be2b4d9f54b89a.png) <br />
+[!screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/4d5086da7b25a6f218d6eebdab6d3b71.png) <br />
+![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/d383582606e776eb901650ac9799cef5.png) <br />
 
 - Made this rogue LDAP server vulnerable by making a vulnerable config file
 
