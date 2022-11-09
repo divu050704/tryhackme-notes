@@ -1,7 +1,3 @@
-# Network connection
-- Added IP of `THMDC` to Network Manger > Advanced Setting > My network(`eth0`) > IPv4 > Additional DNS Server > THMDC IP (10.200.24.101), 1.1.1.1
-
-
 ## Password Spraying
 - We will use password Spraying technique for a found password, for e.g., found a default password for new user in OSINT search. 
 - In password spraying, unlike brute-forcing, a password is used against different users, this will prevent the account from lockout.
