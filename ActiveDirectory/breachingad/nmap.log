@@ -1,0 +1,161 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-11-09 09:18 IST
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 09:18
+Completed NSE at 09:18, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 09:18
+Completed NSE at 09:18, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 09:18
+Completed NSE at 09:18, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 09:18
+Completed Parallel DNS resolution of 1 host. at 09:18, 0.00s elapsed
+DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 2, OK: 0, NX: 1, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating Connect Scan at 09:18
+Scanning 10.200.24.101 [65535 ports]
+Discovered open port 135/tcp on 10.200.24.101
+Discovered open port 53/tcp on 10.200.24.101
+Discovered open port 139/tcp on 10.200.24.101
+Discovered open port 22/tcp on 10.200.24.101
+Discovered open port 3389/tcp on 10.200.24.101
+Discovered open port 445/tcp on 10.200.24.101
+Discovered open port 636/tcp on 10.200.24.101
+Connect Scan Timing: About 16.32% done; ETC: 09:21 (0:02:39 remaining)
+Discovered open port 3269/tcp on 10.200.24.101
+Discovered open port 3268/tcp on 10.200.24.101
+Connect Scan Timing: About 32.33% done; ETC: 09:21 (0:02:08 remaining)
+Discovered open port 49672/tcp on 10.200.24.101
+Discovered open port 49670/tcp on 10.200.24.101
+Discovered open port 593/tcp on 10.200.24.101
+Discovered open port 464/tcp on 10.200.24.101
+Connect Scan Timing: About 48.35% done; ETC: 09:21 (0:01:37 remaining)
+Discovered open port 49667/tcp on 10.200.24.101
+Connect Scan Timing: About 42.91% done; ETC: 09:22 (0:02:41 remaining)
+Connect Scan Timing: About 53.59% done; ETC: 09:22 (0:02:11 remaining)
+Discovered open port 9389/tcp on 10.200.24.101
+Connect Scan Timing: About 64.27% done; ETC: 09:22 (0:01:41 remaining)
+Discovered open port 49699/tcp on 10.200.24.101
+Discovered open port 88/tcp on 10.200.24.101
+Discovered open port 49666/tcp on 10.200.24.101
+Connect Scan Timing: About 74.94% done; ETC: 09:22 (0:01:11 remaining)
+Discovered open port 49724/tcp on 10.200.24.101
+Discovered open port 49669/tcp on 10.200.24.101
+Discovered open port 389/tcp on 10.200.24.101
+Connect Scan Timing: About 85.75% done; ETC: 09:22 (0:00:40 remaining)
+Completed Connect Scan at 09:22, 279.29s elapsed (65535 total ports)
+Initiating Service scan at 09:22
+Scanning 21 services on 10.200.24.101
+Completed Service scan at 09:23, 56.76s elapsed (21 services on 1 host)
+NSE: Script scanning 10.200.24.101.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 09:23
+NSE Timing: About 99.97% done; ETC: 09:24 (0:00:00 remaining)
+Completed NSE at 09:24, 40.21s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 09:24
+Completed NSE at 09:24, 5.29s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 09:24
+Completed NSE at 09:24, 0.00s elapsed
+Nmap scan report for 10.200.24.101
+Host is up, received user-set (0.17s latency).
+Scanned at 2022-11-09 09:18:15 IST for 382s
+Not shown: 65514 filtered tcp ports (no-response)
+PORT      STATE SERVICE       REASON  VERSION
+22/tcp    open  ssh           syn-ack OpenSSH for_Windows_8.1 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 87:4c:ef:4c:bf:9b:eb:32:89:e0:c4:ba:8b:23:84:c5 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCt7Uw137dVLArQCJKfwnGX8x+MwWO88g14+aWC4sVpJzn7SkKp95FkDBLeNb/WMrOKefcrWa3zHkDHRlDO/GlT4sR9AFsUBAx0wO5rI4VDnBslEn5QFTk+pa8cxEVUXqMXHaBnF8ynw8cYno/Ii91cn4UAk5zdAVGROmIIdv5nljSgOnPR3sywlETx5yZ0XQf0wWXGyxJ9Il8JzxbBqzy7KA+5oFquLBlJ38OIvKJSk6aEt7WW9qksasnXLBu+9/stqgE8SFA0wDFVLpsWgmwaIcvtzFw7KzwZmC+/H/JnIXT1t6fdztZPlSZcDtBri5jJxOqWq5xhoSjHfYC997KBSJh/BcJf0HeYH63ZpZlShvKOFTryxgWKtq4oCz3y2agIKa4XNP/Zbr+ZoyxWjE9qK2bNrv3l/TpI5fIfOqIy2FTAU487hARV8stz1B5sEeoE+xCHeowydHgIMiDxcObYsXX9vArkClL6PnN4DiDJHqy2Bu8jwUaosTL3hPnjQnU=
+|   256 b7:ad:cc:81:7a:7f:72:69:09:3d:98:99:4c:ea:8d:2d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJjeonZcepR+qe9ANnqWdsKBPY0jlTihM0aoSx8PDTWhAOIUS3ffmDy1Y3LTDHZdKOM+zcw/TdCsM77g4qbSwYs=
+|   256 73:e4:2e:a5:8e:0f:5a:a7:57:27:2f:f3:d2:6c:e4:78 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIXXy/nA25KZdpLGgsbfqxPex+nX+RJUH3TaFDvcnybr
+53/tcp    open  domain        syn-ack Simple DNS Plus
+88/tcp    open  kerberos-sec  syn-ack Microsoft Windows Kerberos (server time: 2022-11-09 03:53:02Z)
+135/tcp   open  msrpc         syn-ack Microsoft Windows RPC
+139/tcp   open  netbios-ssn   syn-ack Microsoft Windows netbios-ssn
+389/tcp   open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: za.tryhackme.com0., Site: Default-First-Site-Name)
+445/tcp   open  microsoft-ds? syn-ack
+464/tcp   open  kpasswd5?     syn-ack
+593/tcp   open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+636/tcp   open  tcpwrapped    syn-ack
+3268/tcp  open  ldap          syn-ack Microsoft Windows Active Directory LDAP (Domain: za.tryhackme.com0., Site: Default-First-Site-Name)
+3269/tcp  open  tcpwrapped    syn-ack
+3389/tcp  open  ms-wbt-server syn-ack Microsoft Terminal Services
+|_ssl-date: 2022-11-09T03:54:32+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=THMDC.za.tryhackme.com
+| Issuer: commonName=THMDC.za.tryhackme.com
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-11-06T09:53:18
+| Not valid after:  2023-05-08T09:53:18
+| MD5:   d605 9663 8282 bc5f 0880 8418 e349 5bb7
+| SHA-1: 2598 e78b 102f 83f0 cef2 21b8 ddf0 7715 015a e2d8
+| -----BEGIN CERTIFICATE-----
+| MIIC8DCCAdigAwIBAgIQfNMcjsiSkZFC8q2jSduWMjANBgkqhkiG9w0BAQsFADAh
+| MR8wHQYDVQQDExZUSE1EQy56YS50cnloYWNrbWUuY29tMB4XDTIyMTEwNjA5NTMx
+| OFoXDTIzMDUwODA5NTMxOFowITEfMB0GA1UEAxMWVEhNREMuemEudHJ5aGFja21l
+| LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALqEc2+CbnbCETYa
+| q6l26PlPtGaHNggSVy0oPAR1aqG7Z06hjNsxdXKK2tqnuLwQEoBxvwLdHfWY66OF
+| cRNfTE15UfZYUzOOAhGinvaHXfHs+F07j+6W82Ub0IYuoTCGrEdJNCndVAWLHOw9
+| vyQ9poVjrVkKOHvPDMjwGiDUW8Xfa6rqzmJUf0bzc+iWmf8m33ERiuhhD98BFpjD
+| MY/vxNetL3T2+EMUsrXYt0nONFnCoyPSx5a+kfrEk4C9tdZLXawgucPipxkvchal
+| uzB4VImg5MiGhFIZVnjYMm+Jvd/spV6AvTl8Hw1e8Y3F96IWC6wiaGgNVeRmgE+P
+| kpCK+hkCAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgQw
+| MA0GCSqGSIb3DQEBCwUAA4IBAQCkQtY+ryADhONMTjJn1qvXvFFFI/smgLUmcBuI
+| dCXFkCs4xdjJ3ApJls/8zherLAE4V57EUTL9bFJoej3cdO8G+csKflHZmloYDmJl
+| g94jym5H4hn07hwxfiC1o4I0ep7ut8oD6t7K6VPstuek494I3jA3gWwSg6QpfLkq
+| bSZcXdZvx/dt5ZTkScDvUl8mdCF2xpSMn0DHvwHu+tqwEgrpnBkmTIg75euCL91U
+| 0bsOliiVSL6QVBBTDBZXrfslnzyi1W1fGXcII2l1Dqj+7IFFEQEorkOZzkTroMrb
+| 4rHY9bDUeCTUUdv933o5VREg1cqlGrId9VMKrO/FFYiXiWrd
+|_-----END CERTIFICATE-----
+| rdp-ntlm-info: 
+|   Target_Name: ZA
+|   NetBIOS_Domain_Name: ZA
+|   NetBIOS_Computer_Name: THMDC
+|   DNS_Domain_Name: za.tryhackme.com
+|   DNS_Computer_Name: THMDC.za.tryhackme.com
+|   Product_Version: 10.0.17763
+|_  System_Time: 2022-11-09T03:53:53+00:00
+9389/tcp  open  mc-nmf        syn-ack .NET Message Framing
+49666/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49667/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49669/tcp open  ncacn_http    syn-ack Microsoft Windows RPC over HTTP 1.0
+49670/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49672/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49699/tcp open  msrpc         syn-ack Microsoft Windows RPC
+49724/tcp open  msrpc         syn-ack Microsoft Windows RPC
+Service Info: Host: THMDC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 0s, deviation: 0s, median: 0s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 47028/tcp): CLEAN (Timeout)
+|   Check 2 (port 22054/tcp): CLEAN (Timeout)
+|   Check 3 (port 40966/udp): CLEAN (Timeout)
+|   Check 4 (port 33444/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+| smb2-time: 
+|   date: 2022-11-09T03:53:55
+|_  start_date: N/A
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 09:24
+Completed NSE at 09:24, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 09:24
+Completed NSE at 09:24, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 09:24
+Completed NSE at 09:24, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 382.12 seconds
