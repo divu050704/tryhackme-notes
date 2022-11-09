@@ -54,7 +54,7 @@ Reading package lists... Done
 ![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/c4bef0c3f054c32ca982ee9c1608ba1b.png) <br />
 ![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/23b957d41ddba8060e4bc2295b56a2fb.png) <br />
 ![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/07af572567aa32e0e0be2b4d9f54b89a.png) <br />
-[!screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/4d5086da7b25a6f218d6eebdab6d3b71.png) <br />
+![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/4d5086da7b25a6f218d6eebdab6d3b71.png) <br />
 ![screenshot for LDAP configuration](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/d383582606e776eb901650ac9799cef5.png) <br />
 
 - Made this rogue LDAP server vulnerable by making a vulnerable config file
