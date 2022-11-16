@@ -1,0 +1,50 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://cmess.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/11/16 08:01:40 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 274]
+/.htpasswd            (Status: 403) [Size: 274]
+/.htaccess            (Status: 403) [Size: 274]
+/0                    (Status: 200) [Size: 3851]
+/01                   (Status: 200) [Size: 4078]
+/1                    (Status: 200) [Size: 4078]
+/1x1                  (Status: 200) [Size: 4078]
+/about                (Status: 200) [Size: 3353]
+/About                (Status: 200) [Size: 3339]
+/admin                (Status: 200) [Size: 1580]
+/api                  (Status: 200) [Size: 0]   
+/assets               (Status: 301) [Size: 318] [--> http://cmess.thm/assets/?url=assets]
+/author               (Status: 200) [Size: 3590]                                         
+/blog                 (Status: 200) [Size: 3851]                                         
+/category             (Status: 200) [Size: 3862]                                         
+/cm                   (Status: 500) [Size: 0]                                            
+/feed                 (Status: 200) [Size: 735]                                          
+/fm                   (Status: 200) [Size: 0]                                            
+/index                (Status: 200) [Size: 3851]                                         
+/Index                (Status: 200) [Size: 3851]                                         
+/lib                  (Status: 301) [Size: 312] [--> http://cmess.thm/lib/?url=lib]      
+/log                  (Status: 301) [Size: 312] [--> http://cmess.thm/log/?url=log]      
+/login                (Status: 200) [Size: 1580]                                         
+/robots.txt           (Status: 200) [Size: 65]                                           
+/Search               (Status: 200) [Size: 3851]                                         
+/search               (Status: 200) [Size: 3851]                                         
+/server-status        (Status: 403) [Size: 274]                                          
+/sites                (Status: 301) [Size: 316] [--> http://cmess.thm/sites/?url=sites]  
+/src                  (Status: 301) [Size: 312] [--> http://cmess.thm/src/?url=src]      
+/tag                  (Status: 200) [Size: 3874]                                         
+/tags                 (Status: 200) [Size: 3139]                                         
+/themes               (Status: 301) [Size: 318] [--> http://cmess.thm/themes/?url=themes]
+/tmp                  (Status: 301) [Size: 312] [--> http://cmess.thm/tmp/?url=tmp]      
+===============================================================
+2022/11/16 08:02:51 Finished
+===============================================================
