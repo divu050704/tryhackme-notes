@@ -1,0 +1,26 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://internal.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/11/19 17:03:59 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htpasswd            (Status: 403) [Size: 277]
+/blog                 (Status: 301) [Size: 311] [--> http://internal.thm/blog/]
+/index.html           (Status: 200) [Size: 10918]                              
+/javascript           (Status: 301) [Size: 317] [--> http://internal.thm/javascript/]
+/phpmyadmin           (Status: 301) [Size: 317] [--> http://internal.thm/phpmyadmin/]
+/server-status        (Status: 403) [Size: 277]                                      
+/wordpress            (Status: 301) [Size: 316] [--> http://internal.thm/wordpress/] 
+===============================================================
+2022/11/19 17:05:09 Finished
+===============================================================
