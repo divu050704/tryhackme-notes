@@ -1,0 +1,52 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://internal.thm/blog
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,txt,js
+[+] Timeout:                 10s
+===============================================================
+2022/11/19 16:00:42 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 277]
+/.hta.php             (Status: 403) [Size: 277]
+/.hta.txt             (Status: 403) [Size: 277]
+/.hta.js              (Status: 403) [Size: 277]
+/.hta.html            (Status: 403) [Size: 277]
+/.htaccess.php        (Status: 403) [Size: 277]
+/.htpasswd.js         (Status: 403) [Size: 277]
+/.htaccess.txt        (Status: 403) [Size: 277]
+/.htpasswd.html       (Status: 403) [Size: 277]
+/.htaccess.js         (Status: 403) [Size: 277]
+/.htpasswd.php        (Status: 403) [Size: 277]
+/.htaccess.html       (Status: 403) [Size: 277]
+/.htpasswd.txt        (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htpasswd            (Status: 403) [Size: 277]
+/index.php            (Status: 301) [Size: 0] [--> http://internal.thm/blog/]
+/index.php            (Status: 301) [Size: 0] [--> http://internal.thm/blog/]
+/license.txt          (Status: 200) [Size: 19915]                            
+/readme.html          (Status: 200) [Size: 7278]                             
+/wp-admin             (Status: 301) [Size: 320] [--> http://internal.thm/blog/wp-admin/]
+/wp-content           (Status: 301) [Size: 322] [--> http://internal.thm/blog/wp-content/]
+/wp-config.php        (Status: 200) [Size: 0]                                             
+/wp-blog-header.php   (Status: 200) [Size: 0]                                             
+/wp-cron.php          (Status: 200) [Size: 0]                                             
+/wp-includes          (Status: 301) [Size: 323] [--> http://internal.thm/blog/wp-includes/]
+/wp-mail.php          (Status: 403) [Size: 2711]                                           
+/wp-load.php          (Status: 200) [Size: 0]                                              
+/wp-login.php         (Status: 200) [Size: 4530]                                           
+/wp-links-opml.php    (Status: 200) [Size: 223]                                            
+/wp-settings.php      (Status: 500) [Size: 0]                                              
+/wp-signup.php        (Status: 302) [Size: 0] [--> http://internal.thm/blog/wp-login.php?action=register]
+/wp-trackback.php     (Status: 200) [Size: 135]                                                          
+/xmlrpc.php           (Status: 405) [Size: 42]                                                           
+/xmlrpc.php           (Status: 405) [Size: 42]                                                           
+===============================================================
+2022/11/19 16:06:24 Finished
+===============================================================
