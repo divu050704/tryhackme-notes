@@ -1,8 +1,8 @@
-#IP
+# IP
 10.10.155.204
 
-###Enumeration
-####Nmap
+### Enumeration
+#### Nmap
 Found two ports running on the machine
 1. HTTP - 80
 2. SSH  - 22
@@ -27,7 +27,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 32.21 seconds
 
 ```
-####Gobuster
+#### Gobuster
 On the website found user name `john` in comments
 Found two suspicious directorities.
 1. uploads
@@ -55,7 +55,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ```
 - The `secret` directory has secret key or the id_rsa key for the user josh
 - The `/uploads` directory had dict.lst file
-##JOHN
+## JOHN
 Used ssh2john to convert key to hash and cracked the hash with john and wordlist as dict.lst
 ```console
 ❯ john -w=dict.lst hash | tee john.log
@@ -64,7 +64,7 @@ Cost 1 (KDF/cipher [0=MD5/AES 1=MD5/3DES 2=Bcrypt/AES]) is 0 for all loaded hash
 Cost 2 (iteration count) is 1 for all loaded hashes
 letmein        <------User password for ssh_key  (hash.txt)  
 ```
-##SSH
+## SSH
 Secure shelled the device with
 ```console
 ❯ ssh -i hash.txt john@10.10.155.204
@@ -176,4 +176,4 @@ find: /sys/kernel/debug: Permission denied
 2e337b8c9f3aff0c2b3e8d4e6a7c88fc
 / # 
 ```
-**Device Pwned ;)**
+**Device Pwned ;)** 😉
