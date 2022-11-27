@@ -1,0 +1,30 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://nahamstore.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,js,html,txt
+[+] Timeout:                 10s
+===============================================================
+2022/11/26 18:49:22 Starting gobuster in directory enumeration mode
+===============================================================
+/basket               (Status: 200) [Size: 2465]
+/css                  (Status: 301) [Size: 178] [--> http://127.0.0.1/css/]
+/js                   (Status: 301) [Size: 178] [--> http://127.0.0.1/js/] 
+/login                (Status: 200) [Size: 3099]                           
+/logout               (Status: 302) [Size: 0] [--> /]                      
+/register             (Status: 200) [Size: 3138]                           
+/returns              (Status: 200) [Size: 3628]                           
+/robots.txt           (Status: 200) [Size: 13]                             
+/robots.txt           (Status: 200) [Size: 13]                             
+/search               (Status: 200) [Size: 3351]                           
+/staff                (Status: 200) [Size: 2287]                           
+/uploads              (Status: 301) [Size: 178] [--> http://127.0.0.1/uploads/]
+===============================================================
+2022/11/26 18:55:24 Finished
+===============================================================
