@@ -54,3 +54,50 @@
 - Made a get request to (http://nahamstore.thm/product?id=1&name=%3C/title%3E%3Cscript%3Ealert(%22PWNED%22)%3C/script%3E) and got an alert `PWNED`
 
 ![screenshot](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/16.png)
+
+## `http://nahamstore.thm/search?q=`
+- There is a Javascript XSS on the page, we can escape parenthesis with `' +` and write are command and end it with `+ '`
+
+```javascript
+var search = 'random';
+    $.get('/search-products?q=' + search,function(resp){
+        if( resp.length == 0 ){
+
+            $('.product-list').html('<div class="text-center" style="margin:10px">No matching products found</div>');
+
+        }else {
+            $.each(resp, function (a, b) {
+                $('.product-list').append('<div class="col-md-4">' +
+                    '<div class="product_holder" style="border:1px solid #ececec;padding: 15px;margin-bottom:15px">' +
+                    '<div class="image text-center"><a href="/product?id=' + b.id + '"><img class="img-thumbnail" src="/product/picture/?file=' + b.img + '.jpg"></a></div>' +
+                    '<div class="text-center" style="font-size:20px"><strong><a href="/product?id=' + b.id + '">' + b.name + '</a></strong></div>' +
+                    '<div class="text-center"><strong>$' + b.cost + '</strong></div>' +
+                    '<div class="text-center" style="margin-top:10px"><a href="/product?id=' + b.id + '" class="btn btn-success">View</a></div>' +
+                    '</div>' +
+                    '</div>');
+            });
+        }
+    });
+```
+
+- Made a request as `http://nahamstore.thm/search?q=%27%2B%20alert(%22PWNED%22)%20%2B%27` and got a alert (we cannot use `+` directly because it stands for <SPACE> in URL, so user `%2B` instead.)
+
+![Screenshot](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/18.png)
+
+## `http://nahamstore.thm/returns`
+
+- First need to place an order so made an account, signed in, and ordered an item, and noted the ordered id for future reference.
+- Went to `http://nahamstore.thm/returns` ,entered the id we got earlier and created the return. 
+
+![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/19.png)
+
+![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/20.png)
+
+- On the confirmation page we can see that same `Random Text` is inside a `textbox`. We can escape the tag `textbox` and make Cross Site Scripting(`XSS`)
+- Made an attempt to alert `PWNED`
+
+![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/21.png)
+
+- Got an alert
+
+![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/22.png)
