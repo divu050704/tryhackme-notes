@@ -1,0 +1,31 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.191.37/d1r3c70ry_center
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,js,txt,html
+[+] Timeout:                 10s
+===============================================================
+2022/12/06 15:37:26 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 277]
+/.hta.html            (Status: 403) [Size: 277]
+/.hta.php             (Status: 403) [Size: 277]
+/.hta.js              (Status: 403) [Size: 277]
+/.hta.txt             (Status: 403) [Size: 277]
+/.htaccess            (Status: 403) [Size: 277]
+/.htpasswd            (Status: 403) [Size: 277]
+/.htaccess.js         (Status: 403) [Size: 277]
+/.htpasswd.php        (Status: 403) [Size: 277]
+/.htaccess.txt        (Status: 403) [Size: 277]
+/.htpasswd.js         (Status: 403) [Size: 277]
+/.htaccess.html       (Status: 403) [Size: 277]
+/.htpasswd.txt        (Status: 403) [Size: 277]
+/.htaccess.php        (Status: 403) [Size: 277]
+/.htpasswd.html       (Status: 403) [Size: 277]
+/claim                (Status: 301) [Size: 329] [--> http://10.10.191.37/d1r3c70ry_center/claim/]
