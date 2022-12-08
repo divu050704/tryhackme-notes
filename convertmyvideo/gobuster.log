@@ -1,0 +1,40 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.89.4/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,js,txt
+[+] Timeout:                 10s
+===============================================================
+2022/12/07 17:37:14 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 275]
+/.htpasswd.js         (Status: 403) [Size: 275]
+/.htaccess.php        (Status: 403) [Size: 275]
+/.htpasswd.txt        (Status: 403) [Size: 275]
+/.htaccess.js         (Status: 403) [Size: 275]
+/.htpasswd.html       (Status: 403) [Size: 275]
+/.htaccess.txt        (Status: 403) [Size: 275]
+/.htpasswd.php        (Status: 403) [Size: 275]
+/.htaccess.html       (Status: 403) [Size: 275]
+/.htpasswd            (Status: 403) [Size: 275]
+/.hta.php             (Status: 403) [Size: 275]
+/.hta.js              (Status: 403) [Size: 275]
+/.hta.txt             (Status: 403) [Size: 275]
+/.hta.html            (Status: 403) [Size: 275]
+/.hta                 (Status: 403) [Size: 275]
+/admin                (Status: 401) [Size: 457]
+/images               (Status: 301) [Size: 309] [--> http://10.10.89.4/images/]
+/index.php            (Status: 200) [Size: 747]                                
+/index.php            (Status: 200) [Size: 747]                                
+/js                   (Status: 301) [Size: 305] [--> http://10.10.89.4/js/]    
+/server-status        (Status: 403) [Size: 275]                                
+/tmp                  (Status: 301) [Size: 306] [--> http://10.10.89.4/tmp/]   
+===============================================================
+2022/12/07 17:43:30 Finished
+===============================================================
