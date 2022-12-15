@@ -1,0 +1,46 @@
+❯ nc 10.10.119.255 9009
+
+
+ __          __  _                            _                   ____   _____ 
+ \ \        / / | |                          | |            /\   |  _ \ / ____|
+  \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___      /  \  | |_) | |     
+   \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \    / /\ \ |  _ <| |     
+    \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) |  / ____ \| |_) | |____ 
+     \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/  /_/    \_\____/ \_____|
+                                                                               
+                                                                               
+
+
+What are you looking for? key
+Sounds like you forgot your private key. Let's find it for you...
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAoBhkQaEJ9NvBhJAJObgjDWjZ/EPXvw41s/eovjpm6FNmD/2I
+ZE/98k6xBb9zQ8LfgGcx302HggNMyGC5kF1ebI6QCbHxwWTzmqIR5tfa5MG/0bSE
+peDHjihn+eB94hfo/eCSyRsCH05FSwqMJgXrMKJbQOnDd24YchWcj102MnFdW4Hx
+/BTNkseKET8tYbB/mUyMkPWHLCxeQ5zuT8Bk5KIpZGgSobT2CU+pVhWGrepArzRL
+Pv5NvqaPCE4cCZkFSzXRT3n5P4eng4l8ZeYofuemuWTl9XGntjN9iAW4dizK6ned
+bRpLBPKQPT5ceerhXiBbbYnZnfvp9k1IpkhI0QIDAQABAoIBAQCf/2CK+n9x2AIy
+EqU1qyJU73oTlFXU2kWvg45/9uwLufWhe3dJEWyxMhXWsbxndyVZNUjxa5FGzTd6
+drhdYALTKTMojU8YQWT4IIsVkppvznZ/BRMgmGG3YAhyAPqt78lpmHv6QmS/lsDH
+u1XPVlDzfP8IA9fWzw/dTF34JWbZxz+fEqqpC2HvrsvFNGe19hF6O7wwTonCCU/P
+7Wf2BXT6cYDefWlGqLhha1ngQAmaeptBITBjk8B2N6gbPUa7QM+XGYUKVVJoIIxm
++Q/mKB3GP4dN6TLZ+ZRjF6UI0k0lKFLzP7puMv3v39FAoLWbmvjRzr5IlCtnCWWp
+6WPbfeABAoGBAM0srpd1mtPVy5y2TYsHoq3azKmqX7QSya0EnsCjHpRiO05ypniY
+80TEx/8ZrDdSsAzbgKfwUkN2VLvTkCluh3AVHDDqdWebsEd8kTuuNS3JfW/Rf2bm
+2nmHeLDJt9ZlgkLl0RmnyyQg1Ez/y/lFZ08OzLp7flJeJ+qx+fdmZJLRAoGBAMfA
++FRs1gbH59vYRo1ffd5gH0vDhMFvHq8JasxVYBp/xfkfXETUtMRCSJdU7iG8wtnp
+RHravj0EFE+CyHQ8SZnm53OcV6KN+BZ7PoCMMlZ8CCtqtOvk/2mzH/AGNoCJWXKO
+zuI9xhTfgc5HLuiwiOKxyxEMzSbD7FJFqXea2dYBAoGAbzuMI9zEZZgA3SMQgxFO
+psZ6MnmFjRCqebyJfJJyn6tpz6vkiHkTWfL9IlX+wbd4bmAKLgHh92UNpw6Zl3yu
+vJsVP4e8wsDrHrZv3lUhy4LzGE4Rre31//DsA5w4qGk755zEcg4/2YRa1KvRH4D6
+8ydo4qjU4T7ekSSQCgpe+CECgYALW09DDYUFkav+9cbdFsbDM9fTqOQNU1H9RZ3K
+zDfQid8pkLzgNO+qENKrt+pqBJ9XYEnCallSgr7c3mSjJyJQG66hBgx9c3DdZlhh
+WpcqD5cvULvEhZp32fVA4jmLCUQKnU/p0PVIDoUEw0tJc2/044LWD1JCl/UBoHBI
+Goe0AQKBgGQul9cYDtGr8uu1jL5z0gAmTEYxFRTN8yM3QJFItFq9SJl1L/wlvPHN
+SCLXGvk6cyLMn2D6YvK1S8SW444CjrrcKl1YvkRZ3wH8S8c2CS22VgEgVfF3Eav3
+rvKMhGYDjzbZbSQSAtx8KNXV62yaNrrX4mHJ+1aUpK+1tth00yuQ
+-----END RSA PRIVATE KEY-----
+
+
+What are you looking for?
