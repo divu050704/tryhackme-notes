@@ -1,0 +1,2 @@
+https:safebrowsing.googleapis.com:443:.:^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:3	0	19157	https:safebrowsing.googleapis.com:443:safebrowsing.googleapis.com:443::n:1657820228:h3:y:1655228227:n:^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:|n:y:
+https:www.google.com:443:.:^firstPartyDomain=google-canonical.search.suggestions.mozilla:3	0	19157	https:www.google.com:443:www.google.com:443::n:1657819536:h3:y:1655227531:n:^firstPartyDomain=google-canonical.search.suggestions.mozilla:|n:y:
