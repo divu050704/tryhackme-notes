@@ -1,0 +1,36 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://api.vulnnet.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              txt,html,php,js
+[+] Timeout:                 10s
+===============================================================
+2022/12/16 18:40:31 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 280]
+/.hta.php             (Status: 403) [Size: 280]
+/.hta.js              (Status: 403) [Size: 280]
+/.hta.txt             (Status: 403) [Size: 280]
+/.hta.html            (Status: 403) [Size: 280]
+/.htaccess.php        (Status: 403) [Size: 280]
+/.htpasswd.js         (Status: 403) [Size: 280]
+/.htaccess.js         (Status: 403) [Size: 280]
+/.htpasswd.txt        (Status: 403) [Size: 280]
+/.htaccess.txt        (Status: 403) [Size: 280]
+/.htpasswd.html       (Status: 403) [Size: 280]
+/.htaccess.html       (Status: 403) [Size: 280]
+/.htpasswd            (Status: 403) [Size: 280]
+/.htaccess            (Status: 403) [Size: 280]
+/.htpasswd.php        (Status: 403) [Size: 280]
+/index.php            (Status: 200) [Size: 18] 
+/index.php            (Status: 200) [Size: 18] 
+/server-status        (Status: 403) [Size: 280]
+===============================================================
+2022/12/16 18:46:13 Finished
+===============================================================

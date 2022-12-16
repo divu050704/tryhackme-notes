@@ -1,0 +1,41 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://admin1.vulnnet.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,js,txt,html
+[+] Timeout:                 10s
+===============================================================
+2022/12/16 18:49:40 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.txt             (Status: 403) [Size: 283]
+/.hta.html            (Status: 403) [Size: 283]
+/.hta                 (Status: 403) [Size: 283]
+/.hta.php             (Status: 403) [Size: 283]
+/.hta.js              (Status: 403) [Size: 283]
+/.htaccess            (Status: 403) [Size: 283]
+/.htpasswd            (Status: 403) [Size: 283]
+/.htaccess.php        (Status: 403) [Size: 283]
+/.htpasswd.html       (Status: 403) [Size: 283]
+/.htaccess.js         (Status: 403) [Size: 283]
+/.htpasswd.php        (Status: 403) [Size: 283]
+/.htaccess.txt        (Status: 403) [Size: 283]
+/.htpasswd.js         (Status: 403) [Size: 283]
+/.htaccess.html       (Status: 403) [Size: 283]
+/.htpasswd.txt        (Status: 403) [Size: 283]
+/en                   (Status: 301) [Size: 321] [--> http://admin1.vulnnet.thm/en/]
+/fileadmin            (Status: 301) [Size: 328] [--> http://admin1.vulnnet.thm/fileadmin/]
+/LICENSE.txt          (Status: 200) [Size: 18425]                                         
+/server-status        (Status: 403) [Size: 283]                                           
+/typo3conf            (Status: 301) [Size: 328] [--> http://admin1.vulnnet.thm/typo3conf/]
+/typo3                (Status: 301) [Size: 324] [--> http://admin1.vulnnet.thm/typo3/]    
+/typo3temp            (Status: 301) [Size: 328] [--> http://admin1.vulnnet.thm/typo3temp/]
+/vendor               (Status: 301) [Size: 325] [--> http://admin1.vulnnet.thm/vendor/]   
+===============================================================
+2022/12/16 18:55:22 Finished
+===============================================================

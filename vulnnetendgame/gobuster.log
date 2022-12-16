@@ -1,0 +1,41 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://vulnnet.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,js,txt,html
+[+] Timeout:                 10s
+===============================================================
+2022/12/16 18:17:54 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta                 (Status: 403) [Size: 276]
+/.hta.php             (Status: 403) [Size: 276]
+/.hta.js              (Status: 403) [Size: 276]
+/.hta.txt             (Status: 403) [Size: 276]
+/.hta.html            (Status: 403) [Size: 276]
+/.htaccess            (Status: 403) [Size: 276]
+/.htpasswd            (Status: 403) [Size: 276]
+/.htaccess.php        (Status: 403) [Size: 276]
+/.htpasswd.php        (Status: 403) [Size: 276]
+/.htaccess.js         (Status: 403) [Size: 276]
+/.htpasswd.js         (Status: 403) [Size: 276]
+/.htaccess.txt        (Status: 403) [Size: 276]
+/.htpasswd.txt        (Status: 403) [Size: 276]
+/.htaccess.html       (Status: 403) [Size: 276]
+/.htpasswd.html       (Status: 403) [Size: 276]
+/css                  (Status: 301) [Size: 308] [--> http://vulnnet.thm/css/]
+/fonts                (Status: 301) [Size: 310] [--> http://vulnnet.thm/fonts/]
+/images               (Status: 301) [Size: 311] [--> http://vulnnet.thm/images/]
+/index.html           (Status: 200) [Size: 4346]                                
+/index.html           (Status: 200) [Size: 4346]                                
+/js                   (Status: 301) [Size: 307] [--> http://vulnnet.thm/js/]    
+/README.txt           (Status: 200) [Size: 743]                                 
+/server-status        (Status: 403) [Size: 276]                                 
+===============================================================
+2022/12/16 18:23:34 Finished
+===============================================================
