@@ -1,0 +1,33 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.252.238:445
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,js,txt,html
+[+] Timeout:                 10s
+===============================================================
+2023/03/05 20:10:17 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.html            (Status: 403) [Size: 279]
+/.hta                 (Status: 403) [Size: 279]
+/.hta.php             (Status: 403) [Size: 279]
+/.hta.js              (Status: 403) [Size: 279]
+/.htaccess.html       (Status: 403) [Size: 279]
+/.hta.txt             (Status: 403) [Size: 279]
+/.htpasswd            (Status: 403) [Size: 279]
+/.htaccess            (Status: 403) [Size: 279]
+/.htpasswd.php        (Status: 403) [Size: 279]
+/.htaccess.php        (Status: 403) [Size: 279]
+/.htpasswd.js         (Status: 403) [Size: 279]
+/.htaccess.js         (Status: 403) [Size: 279]
+/.htpasswd.txt        (Status: 403) [Size: 279]
+/.htaccess.txt        (Status: 403) [Size: 279]
+/.htpasswd.html       (Status: 403) [Size: 279]
+/index.html           (Status: 200) [Size: 10918]
+/index.html           (Status: 200) [Size: 10918]
+/management           (Status: 301) [Size: 324] [--> http://10.10.252.238:445/management/]

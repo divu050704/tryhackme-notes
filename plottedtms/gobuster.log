@@ -1,0 +1,39 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.252.238
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              php,js,txt,html
+[+] Timeout:                 10s
+===============================================================
+2023/03/05 20:11:05 Starting gobuster in directory enumeration mode
+===============================================================
+/.htaccess            (Status: 403) [Size: 278]
+/.htpasswd            (Status: 403) [Size: 278]
+/.htaccess.php        (Status: 403) [Size: 278]
+/.htpasswd.html       (Status: 403) [Size: 278]
+/.htaccess.js         (Status: 403) [Size: 278]
+/.htpasswd.php        (Status: 403) [Size: 278]
+/.htaccess.txt        (Status: 403) [Size: 278]
+/.htpasswd.js         (Status: 403) [Size: 278]
+/.htaccess.html       (Status: 403) [Size: 278]
+/.htpasswd.txt        (Status: 403) [Size: 278]
+/.hta.php             (Status: 403) [Size: 278]
+/.hta.js              (Status: 403) [Size: 278]
+/.hta.txt             (Status: 403) [Size: 278]
+/.hta.html            (Status: 403) [Size: 278]
+/.hta                 (Status: 403) [Size: 278]
+/admin                (Status: 301) [Size: 314] [--> http://10.10.252.238/admin/]
+/index.html           (Status: 200) [Size: 10918]                                
+/index.html           (Status: 200) [Size: 10918]                                
+/passwd               (Status: 200) [Size: 25]                                   
+/server-status        (Status: 403) [Size: 278]                                  
+/shadow               (Status: 200) [Size: 25]                                   
+===============================================================
+2023/03/05 20:17:07 Finished
+===============================================================
