@@ -1,103 +1,61 @@
-# RECON
-
-
-
-
-
 # XSS
 
-# `http://marketing.nahamstore.thm/?error=`
-- Go to (http://marketing.nahamstor.thm)
-- It has two links redirects.
+### Enter an URL ( including parameters ) of an endpoint that is vulnerable to XSS
 
-```html
-  <td>Pre Opening Interest</td>
-  <td>12/10/2020 18:23</td>
-  <td class="text-center"><a href="/8d1952ba2b3c6dcd76236f090ab8642c" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a></td>
-</tr>
-<tr>
-  <td>Hoodie Giveaway</td>
-  <td>12/15/2020 10:16</td>
-  <td class="text-center"><a href="/09c2afcff60bb4dd3af7c5c5d74a482f" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a></td>
-```
+<details>
+<summary><b>Answer</b></summary>
+<b>http://marketing.nahamstore.thm/?error=</b>
+</details>
 
-- Edited the link to `/8d1952ba2b3c6dcd76236f090ab8642r`, i.e., changed last alphabet of the of redirect and got a new page `http://marketing.nahamstore.thm/?error=Not+Found`
-- We can XSS in the `error` parameter, because same text is used in the web-page as `Not Found`, which can be confirmed by editing the parameter.
-- We need to escape the `<p>` tag and inject are code
+- Add `<IP>    nahamstore.thm` to `/etc/hosts` 
+- Start `wfuzz` to enumerate subdomains on the machine
 
-```html
-<div class="alert alert-danger text-center" style="margin:0 100px 0 100px">
-  <p>Not Found</p>
-</div>
+![wfuzz screenshot](https://raw.githubusercontent.com/divu050704/assets-holder/77a4b39666cec823c7f07b707617bdac52363577/tryhackme-screenshots/Screenshot%202023-06-01%20195740.png)
 
-```
+- Found 3 interesting subdomains `marketing`, `shop`, `stock`. 
+- Added these to `/etc/hosts`.
+- Scan `marketing.nahamstore.thm` for directories using `gobuster`, but didn't find anything interesting.
+- Tried changing campaign URL by a single alphabet and got an error as campaign not found.
+- Tried escaping error `Campaingn not found` and found XSS. 
 
-- I escaped `<div>` tags also just for fun
-- **URL** - (http://marketing.nahamstore.thm/?error=XSS%3C%2Fp%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3C%2Fdiv%3E%3Ch1+style%3D%22color%3Ared%3Btext-align%3Acenter%22%3EPWNED%3C%2Fh1%3E) 
+![screenshot for XSS on marketing subdomain](https://raw.githubusercontent.com/divu050704/assets-holder/cf988af4bfda7f9d7b674ec3c7aeeb465e6d75bb/tryhackme-screenshots/Screenshot%202023-06-01%20201355.png)
 
-![screenshot](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/15.png)
+### What HTTP header can be used to create a Stored XXS
 
-## `http://nahamstore.thm/product?id=1&name=Hoodie+%2B+Tee`
-- Edited name tag to `random`, and the title changed to `random`.
+<details>
+<summary><b>Answer</b></summary>
+<b>User-Agent</b>
+</details>
 
-```html
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NahamStore - random</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-```
+- On `shop.nahamstore.thm`, we can add `XSS` to User-Agent while placing order. 
 
-- We can escape `</title>` tag and the code will be fine.
-- Made a get request to (http://nahamstore.thm/product?id=1&name=%3C/title%3E%3Cscript%3Ealert(%22PWNED%22)%3C/script%3E) and got an alert `PWNED`
+![XSS on order page with burbsuite](https://raw.githubusercontent.com/divu050704/assets-holder/aead568a3a87fd21d51e16d407f024f350240fb7/tryhackme-screenshots/Screenshot%202023-06-01%20202256.png)
 
-![screenshot](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/16.png)
+- Now go to My Orders page and check the latest order.
 
-## `http://nahamstore.thm/search?q=`
-- There is a Javascript XSS on the page, we can escape parenthesis with `' +` and write are command and end it with `+ '`
+![screenshot for XSS confirmation on orders page](https://raw.githubusercontent.com/divu050704/assets-holder/a6cee254bf3d72a294b5a8bfdf29162a6c024f30/tryhackme-screenshots/Screenshot%202023-06-01%20202507.png)
 
-```javascript
-var search = 'random';
-    $.get('/search-products?q=' + search,function(resp){
-        if( resp.length == 0 ){
+### What HTML tag needs to be escaped on the product page to get the XSS to work?
 
-            $('.product-list').html('<div class="text-center" style="margin:10px">No matching products found</div>');
+<details>
+<summary><b>Answer</b></summary>
+<b>title</b>
+</details>
 
-        }else {
-            $.each(resp, function (a, b) {
-                $('.product-list').append('<div class="col-md-4">' +
-                    '<div class="product_holder" style="border:1px solid #ececec;padding: 15px;margin-bottom:15px">' +
-                    '<div class="image text-center"><a href="/product?id=' + b.id + '"><img class="img-thumbnail" src="/product/picture/?file=' + b.img + '.jpg"></a></div>' +
-                    '<div class="text-center" style="font-size:20px"><strong><a href="/product?id=' + b.id + '">' + b.name + '</a></strong></div>' +
-                    '<div class="text-center"><strong>$' + b.cost + '</strong></div>' +
-                    '<div class="text-center" style="margin-top:10px"><a href="/product?id=' + b.id + '" class="btn btn-success">View</a></div>' +
-                    '</div>' +
-                    '</div>');
-            });
-        }
-    });
-```
+- On clicking the image of the product we were redirected to the details page which had id and name of the products as parameters. 
+- On changing the name parameter, I noticed that the name of the products was directly dependent on this page. 
+- Escaped the `<title>` attribute and injected javascript code.
 
-- Made a request as `http://nahamstore.thm/search?q=%27%2B%20alert(%22PWNED%22)%20%2B%27` and got a alert (we cannot use `+` directly because it stands for <SPACE> in URL, so user `%2B` instead.)
+![screenshot for XSS on product page](https://raw.githubusercontent.com/divu050704/assets-holder/0549ec146b910462dc680019937021dac9e8e37b/tryhackme-screenshots/Screenshot%202023-06-01%20203710.png)
 
-![Screenshot](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/18.png)
+### What JavaScript variable needs to be escaped to get the XSS to work?
 
-## `http://nahamstore.thm/returns`
+<details>
+<summary><b>Answer</b></summary>
+<b>search</b>
+</details>
 
-- First need to place an order so made an account, signed in, and ordered an item, and noted the ordered id for future reference.
-- Went to `http://nahamstore.thm/returns` ,entered the id we got earlier and created the return. 
+- On the shop subdomain's home page we can see a javascript code for searching products, which seems to vulnerable to code injection.
+- Finally added injection and URL encoded it.
 
-![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/19.png)
-
-![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/20.png)
-
-- On the confirmation page we can see that same `Random Text` is inside a `textbox`. We can escape the tag `textbox` and make Cross Site Scripting(`XSS`)
-- Made an attempt to alert `PWNED`
-
-![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/21.png)
-
-- Got an alert
-
-![alt](https://github.com/divu050704/assets-holder/raw/main/tryhackme-screenshots/22.png)
+![screenshot for XSS on search page](https://raw.githubusercontent.com/divu050704/assets-holder/21323b03b9bbb39272b45920bef3ce880b6bf149/tryhackme-screenshots/Screenshot%202023-06-01%20204533.png)
