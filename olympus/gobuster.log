@@ -1,0 +1,31 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://chat.olympus.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Extensions:              html,php,js,txt
+[+] Timeout:                 10s
+===============================================================
+2023/06/19 18:38:31 Starting gobuster in directory enumeration mode
+===============================================================
+/.hta.html            (Status: 403) [Size: 281]
+/.hta.php             (Status: 403) [Size: 281]
+/.hta.js              (Status: 403) [Size: 281]
+/.hta.txt             (Status: 403) [Size: 281]
+/.htaccess.html       (Status: 403) [Size: 281]
+/.hta                 (Status: 403) [Size: 281]
+/.htpasswd            (Status: 403) [Size: 281]
+/.htaccess            (Status: 403) [Size: 281]
+/.htpasswd.txt        (Status: 403) [Size: 281]
+/.htaccess.php        (Status: 403) [Size: 281]
+/.htaccess.js         (Status: 403) [Size: 281]
+/.htpasswd.html       (Status: 403) [Size: 281]
+/.htpasswd.php        (Status: 403) [Size: 281]
+/.htaccess.txt        (Status: 403) [Size: 281]
+/.htpasswd.js         (Status: 403) [Size: 281]
+/config.php           (Status: 200) [Size: 0]  
