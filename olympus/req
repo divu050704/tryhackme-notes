@@ -8,8 +8,8 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 42
 Origin: http://olympus.thm
 Connection: close
-Referer: http://olympus.thm/~webmaster/index.php
-Cookie: PHPSESSID=gmnto0loqrkft0qd40ov7nm55u
+Referer: http://olympus.thm/~webmaster/
+Cookie: PHPSESSID=2nqqob2b3cc4m4pmkc5ar7kdth
 Upgrade-Insecure-Requests: 1
 
-user_name=admin&user_password=admni&login=
+user_name=admin&user_password=admin&login=

@@ -2,30 +2,39 @@
 Gobuster v3.1.0
 by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
-[+] Url:                     http://chat.olympus.thm
+[+] Url:                     http://olympus.thm
 [+] Method:                  GET
 [+] Threads:                 10
 [+] Wordlist:                /usr/share/wordlists/dirb/common.txt
 [+] Negative Status codes:   404
 [+] User Agent:              gobuster/3.1.0
-[+] Extensions:              html,php,js,txt
+[+] Extensions:              php,js,txt,html
 [+] Timeout:                 10s
 ===============================================================
-2023/06/19 18:38:31 Starting gobuster in directory enumeration mode
+2023/06/21 19:51:54 Starting gobuster in directory enumeration mode
 ===============================================================
-/.hta.html            (Status: 403) [Size: 281]
-/.hta.php             (Status: 403) [Size: 281]
-/.hta.js              (Status: 403) [Size: 281]
-/.hta.txt             (Status: 403) [Size: 281]
-/.htaccess.html       (Status: 403) [Size: 281]
-/.hta                 (Status: 403) [Size: 281]
-/.htpasswd            (Status: 403) [Size: 281]
-/.htaccess            (Status: 403) [Size: 281]
-/.htpasswd.txt        (Status: 403) [Size: 281]
-/.htaccess.php        (Status: 403) [Size: 281]
-/.htaccess.js         (Status: 403) [Size: 281]
-/.htpasswd.html       (Status: 403) [Size: 281]
-/.htpasswd.php        (Status: 403) [Size: 281]
-/.htaccess.txt        (Status: 403) [Size: 281]
-/.htpasswd.js         (Status: 403) [Size: 281]
-/config.php           (Status: 200) [Size: 0]  
+/.hta                 (Status: 403) [Size: 276]
+/.hta.txt             (Status: 403) [Size: 276]
+/.hta.html            (Status: 403) [Size: 276]
+/.hta.php             (Status: 403) [Size: 276]
+/.hta.js              (Status: 403) [Size: 276]
+/.htaccess            (Status: 403) [Size: 276]
+/.htpasswd.php        (Status: 403) [Size: 276]
+/.htaccess.php        (Status: 403) [Size: 276]
+/.htpasswd            (Status: 403) [Size: 276]
+/.htaccess.js         (Status: 403) [Size: 276]
+/.htpasswd.js         (Status: 403) [Size: 276]
+/.htaccess.txt        (Status: 403) [Size: 276]
+/.htpasswd.txt        (Status: 403) [Size: 276]
+/.htaccess.html       (Status: 403) [Size: 276]
+/.htpasswd.html       (Status: 403) [Size: 276]
+/~webmaster           (Status: 301) [Size: 315] [--> http://olympus.thm/~webmaster/]
+/index.php            (Status: 200) [Size: 1948]                                    
+/index.php            (Status: 200) [Size: 1948]                                    
+/javascript           (Status: 301) [Size: 315] [--> http://olympus.thm/javascript/]
+/phpmyadmin           (Status: 403) [Size: 276]                                     
+/server-status        (Status: 403) [Size: 276]                                     
+/static               (Status: 301) [Size: 311] [--> http://olympus.thm/static/]    
+===============================================================
+2023/06/21 19:57:44 Finished
+===============================================================

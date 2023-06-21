@@ -11,50 +11,47 @@ Please contribute more quotes to our GitHub https://github.com/rustscan/rustscan
 
 [1;34m[~][0m The config file is expected to be at "/home/divu050704/.rustscan.toml"
 [1;34m[~][0m Automatically increasing ulimit value to 5000.
-Open 10.10.147.30:22
-Open 10.10.147.30:80
+Open 10.10.157.90:22
+Open 10.10.157.90:80
 [1;34m[~][0m Starting Script(s)
 [1;38;2;0;255;9m[>][0m Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
 
-[1;34m[~][0m Starting Nmap 7.92 ( https://nmap.org ) at 2023-06-19 17:17 IST
+[1;34m[~][0m Starting Nmap 7.92 ( https://nmap.org ) at 2023-06-21 19:50 IST
 NSE: Loaded 155 scripts for scanning.
 NSE: Script Pre-scanning.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.00s elapsed
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.00s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.00s elapsed
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.00s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.00s elapsed
-Initiating Ping Scan at 17:17
-Scanning 10.10.147.30 [2 ports]
-Completed Ping Scan at 17:17, 0.17s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 17:17
-Completed Parallel DNS resolution of 1 host. at 17:17, 5.54s elapsed
-DNS resolution of 1 IPs took 5.54s. Mode: Async [#: 3, OK: 0, NX: 1, DR: 0, SF: 0, TR: 3, CN: 0]
-Initiating Connect Scan at 17:17
-Scanning 10.10.147.30 [2 ports]
-Discovered open port 22/tcp on 10.10.147.30
-Discovered open port 80/tcp on 10.10.147.30
-Completed Connect Scan at 17:17, 0.20s elapsed (2 total ports)
-Initiating Service scan at 17:17
-Scanning 2 services on 10.10.147.30
-Completed Service scan at 17:17, 6.46s elapsed (2 services on 1 host)
-NSE: Script scanning 10.10.147.30.
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.00s elapsed
+Initiating Ping Scan at 19:50
+Scanning 10.10.157.90 [2 ports]
+Completed Ping Scan at 19:50, 0.15s elapsed (1 total hosts)
+Initiating Connect Scan at 19:50
+Scanning olympus.thm (10.10.157.90) [2 ports]
+Discovered open port 22/tcp on 10.10.157.90
+Discovered open port 80/tcp on 10.10.157.90
+Completed Connect Scan at 19:50, 0.16s elapsed (2 total ports)
+Initiating Service scan at 19:50
+Scanning 2 services on olympus.thm (10.10.157.90)
+Completed Service scan at 19:50, 6.30s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.157.90.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 5.74s elapsed
+Initiating NSE at 19:50
+Completed NSE at 19:50, 4.45s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.82s elapsed
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.58s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.00s elapsed
-Nmap scan report for 10.10.147.30
-Host is up, received syn-ack (0.18s latency).
-Scanned at 2023-06-19 17:17:46 IST for 13s
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.00s elapsed
+Nmap scan report for olympus.thm (10.10.157.90)
+Host is up, received syn-ack (0.15s latency).
+Scanned at 2023-06-21 19:50:21 IST for 12s
 
 PORT   STATE SERVICE REASON  VERSION
 22/tcp open  ssh     syn-ack OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
@@ -68,21 +65,22 @@ PORT   STATE SERVICE REASON  VERSION
 80/tcp open  http    syn-ack Apache httpd 2.4.41 ((Ubuntu))
 | http-methods: 
 |_  Supported Methods: GET HEAD POST OPTIONS
+|_http-favicon: Unknown favicon MD5: ED726E098473BFA7523153F761D2232F
+|_http-title: Olympus
 |_http-server-header: Apache/2.4.41 (Ubuntu)
-|_http-title: Did not follow redirect to http://olympus.thm
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 NSE: Script Post-scanning.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.00s elapsed
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.00s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.00s elapsed
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.00s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 17:17
-Completed NSE at 17:17, 0.00s elapsed
+Initiating NSE at 19:50
+Completed NSE at 19:50, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 19.48 seconds
+Nmap done: 1 IP address (1 host up) scanned in 12.59 seconds
 
