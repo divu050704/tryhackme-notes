@@ -7,58 +7,56 @@
 [38;2;255;255;0m:[38;2;249;255;0m [38;2;242;255;0mh[38;2;236;255;0mt[38;2;230;255;0mt[38;2;223;255;0mp[38;2;217;255;0ms[38;2;210;255;0m:[38;2;204;255;0m/[38;2;198;255;0m/[38;2;191;255;0md[38;2;185;255;0mi[38;2;179;255;0ms[38;2;172;255;0mc[38;2;166;255;0mo[38;2;159;255;0mr[38;2;153;255;0md[38;2;147;255;0m.[38;2;140;255;0mg[38;2;134;255;0mg[38;2;128;255;0m/[38;2;121;255;0mG[38;2;115;255;0mF[38;2;108;255;0mr[38;2;102;255;0mQ[38;2;96;255;0ms[38;2;89;255;0mG[38;2;83;255;0my[38;2;77;255;0m [38;2;70;255;0m [38;2;64;255;0m [38;2;57;255;0m [38;2;51;255;0m [38;2;45;255;0m [38;2;38;255;0m [38;2;32;255;0m [38;2;26;255;0m [38;2;19;255;0m [38;2;13;255;0m [38;2;6;255;0m:[0m
 [38;2;255;255;0m:[38;2;249;255;0m [38;2;242;255;0mh[38;2;236;255;0mt[38;2;230;255;0mt[38;2;223;255;0mp[38;2;217;255;0ms[38;2;210;255;0m:[38;2;204;255;0m/[38;2;198;255;0m/[38;2;191;255;0mg[38;2;185;255;0mi[38;2;179;255;0mt[38;2;172;255;0mh[38;2;166;255;0mu[38;2;159;255;0mb[38;2;153;255;0m.[38;2;147;255;0mc[38;2;140;255;0mo[38;2;134;255;0mm[38;2;128;255;0m/[38;2;121;255;0mR[38;2;115;255;0mu[38;2;108;255;0ms[38;2;102;255;0mt[38;2;96;255;0mS[38;2;89;255;0mc[38;2;83;255;0ma[38;2;77;255;0mn[38;2;70;255;0m/[38;2;64;255;0mR[38;2;57;255;0mu[38;2;51;255;0ms[38;2;45;255;0mt[38;2;38;255;0mS[38;2;32;255;0mc[38;2;26;255;0ma[38;2;19;255;0mn[38;2;13;255;0m [38;2;6;255;0m:[0m
 [38;2;255;255;0m [38;2;249;255;0m-[38;2;242;255;0m-[38;2;236;255;0m-[38;2;230;255;0m-[38;2;223;255;0m-[38;2;217;255;0m-[38;2;210;255;0m-[38;2;204;255;0m-[38;2;198;255;0m-[38;2;191;255;0m-[38;2;185;255;0m-[38;2;179;255;0m-[38;2;172;255;0m-[38;2;166;255;0m-[38;2;159;255;0m-[38;2;153;255;0m-[38;2;147;255;0m-[38;2;140;255;0m-[38;2;134;255;0m-[38;2;128;255;0m-[38;2;121;255;0m-[38;2;115;255;0m-[38;2;108;255;0m-[38;2;102;255;0m-[38;2;96;255;0m-[38;2;89;255;0m-[38;2;83;255;0m-[38;2;77;255;0m-[38;2;70;255;0m-[38;2;64;255;0m-[38;2;57;255;0m-[38;2;51;255;0m-[38;2;45;255;0m-[38;2;38;255;0m-[38;2;32;255;0m-[38;2;26;255;0m-[38;2;19;255;0m-[38;2;13;255;0m-[0m[0m
-Nmap? More like slowmap.🐢
+Real hackers hack time ⌛
 
 [1;34m[~][0m The config file is expected to be at "/home/divu050704/.rustscan.toml"
 [1;34m[~][0m Automatically increasing ulimit value to 5000.
-Open 10.10.43.116:22
-Open 10.10.43.116:80
-Open 10.10.43.116:3306
+Open 10.10.180.105:22
+Open 10.10.180.105:80
+Open 10.10.180.105:3306
 [1;34m[~][0m Starting Script(s)
 [1;38;2;0;255;9m[>][0m Script to be run Some("nmap -vvv -p {{port}} {{ip}}")
 
-[1;34m[~][0m Starting Nmap 7.92 ( https://nmap.org ) at 2023-06-22 20:17 IST
+[1;34m[~][0m Starting Nmap 7.92 ( https://nmap.org ) at 2023-06-27 19:45 IST
 NSE: Loaded 155 scripts for scanning.
 NSE: Script Pre-scanning.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 20:17
-Completed NSE at 20:17, 0.00s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 20:17
-Completed NSE at 20:17, 0.00s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 20:17
-Completed NSE at 20:17, 0.00s elapsed
-Initiating Ping Scan at 20:17
-Scanning 10.10.43.116 [2 ports]
-Completed Ping Scan at 20:17, 0.15s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 20:17
-Completed Parallel DNS resolution of 1 host. at 20:17, 0.00s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
+Initiating Ping Scan at 19:45
+Scanning 10.10.180.105 [2 ports]
+Completed Ping Scan at 19:45, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 19:45
+Completed Parallel DNS resolution of 1 host. at 19:45, 0.00s elapsed
 DNS resolution of 1 IPs took 0.00s. Mode: Async [#: 4, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]
-Initiating Connect Scan at 20:17
-Scanning 10.10.43.116 (10.10.43.116) [3 ports]
-Discovered open port 3306/tcp on 10.10.43.116
-Discovered open port 22/tcp on 10.10.43.116
-Discovered open port 80/tcp on 10.10.43.116
-Completed Connect Scan at 20:17, 0.17s elapsed (3 total ports)
-Initiating Service scan at 20:17
-Scanning 3 services on 10.10.43.116 (10.10.43.116)
-Completed Service scan at 20:17, 8.91s elapsed (3 services on 1 host)
-NSE: Script scanning 10.10.43.116.
+Initiating Connect Scan at 19:45
+Scanning 10.10.180.105 (10.10.180.105) [3 ports]
+Discovered open port 22/tcp on 10.10.180.105
+Discovered open port 3306/tcp on 10.10.180.105
+Discovered open port 80/tcp on 10.10.180.105
+Completed Connect Scan at 19:45, 0.15s elapsed (3 total ports)
+Initiating Service scan at 19:45
+Scanning 3 services on 10.10.180.105 (10.10.180.105)
+Completed Service scan at 19:45, 11.61s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.180.105.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 20:17
-NSE Timing: About 98.56% done; ETC: 20:18 (0:00:00 remaining)
-NSE Timing: About 99.76% done; ETC: 20:18 (0:00:00 remaining)
-Completed NSE at 20:18, 68.86s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 6.07s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 20:18
-Completed NSE at 20:18, 7.54s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.99s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 20:18
-Completed NSE at 20:18, 0.00s elapsed
-Nmap scan report for 10.10.43.116 (10.10.43.116)
-Host is up, received syn-ack (0.15s latency).
-Scanned at 2023-06-22 20:17:30 IST for 86s
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
+Nmap scan report for 10.10.180.105 (10.10.180.105)
+Host is up, received conn-refused (0.14s latency).
+Scanned at 2023-06-27 19:45:24 IST for 19s
 
 PORT     STATE SERVICE REASON  VERSION
 22/tcp   open  ssh     syn-ack OpenSSH 7.4 (protocol 2.0)
@@ -74,19 +72,25 @@ PORT     STATE SERVICE REASON  VERSION
 | /joomla/administrator/ /administrator/ /bin/ /cache/ 
 | /cli/ /components/ /includes/ /installation/ /language/ 
 |_/layouts/ /libraries/ /logs/ /modules/ /plugins/ /tmp/
+|_http-title: Home
+|_http-generator: Joomla! - Open Source Content Management
+|_http-favicon: Unknown favicon MD5: 1194D7D32448E1F90741A97B42AF91FA
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.6 (CentOS) PHP/5.6.40
 3306/tcp open  mysql   syn-ack MariaDB (unauthorized)
 
 NSE: Script Post-scanning.
 NSE: Starting runlevel 1 (of 3) scan.
-Initiating NSE at 20:18
-Completed NSE at 20:18, 0.00s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
 NSE: Starting runlevel 2 (of 3) scan.
-Initiating NSE at 20:18
-Completed NSE at 20:18, 0.00s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
 NSE: Starting runlevel 3 (of 3) scan.
-Initiating NSE at 20:18
-Completed NSE at 20:18, 0.00s elapsed
+Initiating NSE at 19:45
+Completed NSE at 19:45, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 86.50 seconds
+Nmap done: 1 IP address (1 host up) scanned in 19.98 seconds
 
