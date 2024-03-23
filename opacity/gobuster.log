@@ -1,0 +1,20 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.154.55
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-small.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/css                  (Status: 301) [Size: 310] [--> http://10.10.154.55/css/]
+[2K/cloud                (Status: 301) [Size: 312] [--> http://10.10.154.55/cloud/]
+
+===============================================================
+Finished
+===============================================================

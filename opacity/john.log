@@ -1,0 +1,13 @@
+Created directory: /home/divu050704/.john
+Using default input encoding: UTF-8
+Loaded 1 password hash (KeePass [SHA256 AES 32/64])
+Cost 1 (iteration count) is 100000 for all loaded hashes
+Cost 2 (version) is 2 for all loaded hashes
+Cost 3 (algorithm [0=AES 1=TwoFish 2=ChaCha]) is 0 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+741852963        (dataset)     
+1g 0:00:00:12 DONE (2024-03-23 07:42) 0.08237g/s 71.82p/s 71.82c/s 71.82C/s chichi..walter
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+
